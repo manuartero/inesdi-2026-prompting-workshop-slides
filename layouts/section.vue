@@ -4,7 +4,6 @@ defineProps<{ minutes?: string; number?: string }>()
 
 <template>
   <div class="slidev-layout ine-dark ine-section">
-    <span class="ine-cover__stripe" aria-hidden="true" />
     <div class="ine-section__body">
       <p v-if="number" class="ine-section__number">{{ number }}</p>
       <slot />

@@ -68,11 +68,11 @@ minutes: 15–35
 # Cinco técnicas
 
 <div class="grid grid-cols-3 gap-4 mt-2">
-<div class="ine-card ine-card--yellow"><h3>Encarnar roles</h3>Y combinarlos: analista + abogado del diablo.</div>
-<div class="ine-card ine-card--yellow"><h3>Dividir en pasos</h3>Un encargo grande, varios pequeños.</div>
-<div class="ine-card ine-card--yellow"><h3>Razonar antes de concluir</h3>Primero el análisis, después la respuesta.</div>
-<div class="ine-card ine-card--cyan"><h3>Que te pregunte</h3>«Antes de responder, hazme las preguntas que necesites.»</div>
-<div class="ine-card ine-card--cyan"><h3>Meta-prompting</h3>Pídele que te ayude a escribir el prompt.</div>
+<div class="ine-card ine-card--accent"><h3>Encarnar roles</h3>Y combinarlos: analista + abogado del diablo.</div>
+<div class="ine-card ine-card--accent"><h3>Dividir en pasos</h3>Un encargo grande, varios pequeños.</div>
+<div class="ine-card ine-card--accent"><h3>Razonar antes de concluir</h3>Primero el análisis, después la respuesta.</div>
+<div class="ine-card"><h3>Que te pregunte</h3>«Antes de responder, hazme las preguntas que necesites.»</div>
+<div class="ine-card"><h3>Meta-prompting</h3>Pídele que te ayude a escribir el prompt.</div>
 </div>
 
 <div class="ine-todo mt-6">TODO: un ejemplo corto de cada técnica sobre Peluda</div>
@@ -161,7 +161,7 @@ minutes: 70–85
 # Que no tengas que escribirlo cada vez
 
 <div class="ine-cols">
-<div class="ine-card ine-card--yellow">
+<div class="ine-card ine-card--accent">
 
 ### Cómo
 
@@ -170,7 +170,7 @@ minutes: 70–85
 - Instrucciones fijas. Sin código.
 
 </div>
-<div class="ine-card ine-card--cyan">
+<div class="ine-card">
 
 ### Cuándo **no**
 
@@ -237,7 +237,7 @@ minutes: 85–90
   <TopicRow title="Todos creen que el que está en riesgo es otro equipo">cuando todas las áreas dicen lo mismo a la vez, es un sesgo</TopicRow>
 </div>
 
-<div class="ine-card ine-card--yellow mt-6">
+<div class="ine-card ine-card--accent mt-6">
 
 ### El 88 % de quienes más rinden con IA dicen estar quemados
 

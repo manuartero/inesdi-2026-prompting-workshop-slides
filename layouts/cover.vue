@@ -4,14 +4,12 @@ defineProps<{ session?: string; teacher?: string }>()
 
 <template>
   <div class="slidev-layout ine-dark ine-cover">
-    <header class="ine-cover__band">
-      <InesdiWordmark />
-    </header>
-    <span class="ine-cover__stripe" aria-hidden="true" />
+    <InesdiWordmark light class="ine-cover__brand" />
     <div class="ine-cover__body">
       <slot />
+      <span class="ine-rule" aria-hidden="true" />
       <p v-if="session" class="ine-cover__session">{{ session }}</p>
-      <p v-if="teacher" class="ine-cover__teacher">Docente: {{ teacher }}</p>
+      <p v-if="teacher" class="ine-cover__teacher">{{ teacher }}</p>
     </div>
   </div>
 </template>

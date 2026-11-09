@@ -88,14 +88,14 @@ Todo lo que no le cuentes, se lo inventa.
 # Peluda: la empresa de este taller
 
 <div class="grid grid-cols-3 gap-4 mt-2">
-<div class="ine-card ine-card--yellow">
+<div class="ine-card ine-card--accent">
 
 ### Qué hace
 
 Comida para perros y gatos **por suscripción**. Cada 4 semanas, en casa.
 
 </div>
-<div class="ine-card ine-card--cyan">
+<div class="ine-card">
 
 ### Dónde
 
@@ -147,7 +147,7 @@ Levantaba submarinos y amenazaba con invertir los polos de la Tierra.
 *Daba miedo porque nadie sabía dónde estaba su **techo**.*
 
 </div>
-<div class="ine-card ine-card--yellow">
+<div class="ine-card ine-card--accent">
 
 <img src="/assets/magneto-headmaster.jpg" class="w-full h-32 object-cover object-top mb-2" alt="Magneto director" />
 
@@ -275,12 +275,12 @@ minutes: 25–50
 # Las seis piezas
 
 <div class="grid grid-cols-3 gap-4 mt-2">
-<div class="ine-card ine-card--yellow"><h3>Rol</h3>Quién es al hacer el trabajo.</div>
-<div class="ine-card ine-card--yellow"><h3>Contexto</h3>Lo que sabría un empleado y el becario no.</div>
-<div class="ine-card ine-card--yellow"><h3>Tarea</h3>Qué tiene que hacer, con un verbo claro.</div>
-<div class="ine-card ine-card--cyan"><h3>Formato</h3>Tabla, lista, columnas, longitud.</div>
-<div class="ine-card ine-card--cyan"><h3>Restricciones</h3>Qué no debe hacer.</div>
-<div class="ine-card ine-card--cyan"><h3>Ejemplos</h3>Uno o dos casos resueltos.</div>
+<div class="ine-card ine-card--accent"><h3>Rol</h3>Quién es al hacer el trabajo.</div>
+<div class="ine-card ine-card--accent"><h3>Contexto</h3>Lo que sabría un empleado y el becario no.</div>
+<div class="ine-card ine-card--accent"><h3>Tarea</h3>Qué tiene que hacer, con un verbo claro.</div>
+<div class="ine-card"><h3>Formato</h3>Tabla, lista, columnas, longitud.</div>
+<div class="ine-card"><h3>Restricciones</h3>Qué no debe hacer.</div>
+<div class="ine-card"><h3>Ejemplos</h3>Uno o dos casos resueltos.</div>
 </div>
 
 <div class="ine-todo mt-6">TODO: el prompt de tickets, con cada pieza resaltada</div>
@@ -370,7 +370,7 @@ minutes: 50–70
 # Dos tipos de alucinación
 
 <div class="ine-cols mt-2">
-<div class="ine-card ine-card--yellow">
+<div class="ine-card ine-card--accent">
 
 ### Se inventa datos
 
@@ -379,7 +379,7 @@ Una cláusula que no existe, una cifra, una ley, una fuente.
 **Remedio:** dale el documento de verdad.
 
 </div>
-<div class="ine-card ine-card--cyan">
+<div class="ine-card">
 
 ### Se olvida de lo acordado
 
@@ -491,7 +491,7 @@ minutes: 85–90
 # Para llevarte
 
 <div class="ine-cols">
-<div class="ine-card ine-card--yellow">
+<div class="ine-card ine-card--accent">
 
 ### La chuleta
 
@@ -500,7 +500,7 @@ Plantilla de prompt + checklist antialucinaciones.
 <div class="ine-todo mt-2">TODO: enlace al PDF</div>
 
 </div>
-<div class="ine-card ine-card--cyan">
+<div class="ine-card">
 
 ### Hasta el 01/12 (voluntario)
 

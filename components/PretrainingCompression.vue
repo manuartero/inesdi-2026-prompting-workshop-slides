@@ -41,7 +41,7 @@
 .ptc__heading {
   font-size: 1.2rem;
   font-weight: 600;
-  color: var(--ine-navy);
+  color: var(--ine-ink);
 }
 .ptc__desc {
   margin: 0 !important;
@@ -52,7 +52,7 @@
 .ptc__arrow {
   width: 20px;
   height: 40px;
-  color: var(--ine-navy);
+  color: var(--ine-ink);
   margin: 0.2rem 0;
 }
 </style>

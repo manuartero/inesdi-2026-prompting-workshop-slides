@@ -48,9 +48,9 @@ const arcs = computed(() => {
         :key="arc.key"
         :d="arc.d"
         fill="none"
-        :stroke="arc.isNew ? 'var(--ine-navy)' : 'var(--ine-ink)'"
-        :stroke-width="arc.isNew ? 2.6 : 1.2"
-        :stroke-opacity="arc.isNew ? 1 : 0.55"
+        :stroke="arc.isNew ? 'var(--ine-ink)' : 'var(--ine-ink)'"
+        :stroke-width="arc.isNew ? 2.2 : 1"
+        :stroke-opacity="arc.isNew ? 1 : 0.25"
         stroke-linecap="round"
       />
     </g>
@@ -63,9 +63,9 @@ const arcs = computed(() => {
       <rect
         :width="BOX_W"
         :height="BOX_H"
-        :fill="index === words.length - 1 ? 'var(--ine-yellow)' : 'white'"
+        :fill="index === words.length - 1 ? 'var(--ine-yellow)' : 'var(--ine-paper)'"
         stroke="var(--ine-ink)"
-        stroke-width="1.5"
+        stroke-width="1"
       />
       <text :x="BOX_W / 2" :y="BOX_H / 2 + 6" text-anchor="middle" class="arcs__label">{{ word }}</text>
     </g>

@@ -19,23 +19,22 @@ withDefaults(defineProps<{ sharpRatio?: number }>(), { sharpRatio: 0.4 })
 }
 .zones__bar {
   display: flex;
-  height: 4rem;
-  border: 2px solid var(--ine-ink);
+  height: 3.4rem;
+  border: 1px solid var(--ine-ink);
 }
 .zones__half {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.3rem;
-  font-weight: 600;
+  font-size: 1rem;
+  font-weight: 500;
 }
 .zones__half--sharp {
-  background: var(--ine-cyan);
-  color: var(--ine-ink);
-  border-right: 2px dashed var(--ine-ink);
+  background: var(--ine-ink);
+  color: white;
 }
 .zones__half--fuzzy {
-  background: repeating-linear-gradient(-45deg, #e4e3e6, #e4e3e6 8px, #f4f4f4 8px, #f4f4f4 16px);
+  background: repeating-linear-gradient(-45deg, var(--ine-line), var(--ine-line) 1px, transparent 1px, transparent 8px);
   color: var(--ine-muted);
 }
 .zones__caption {
