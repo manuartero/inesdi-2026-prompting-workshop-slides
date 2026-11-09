@@ -21,7 +21,7 @@ pnpm build      # both sessions as static sites in dist/
 | `session-1.md`  | Session 1 · structured prompts                                                           |
 | `session-2.md`  | Session 2 · workflows                                                                    |
 | `layouts/`      | INESDI layouts: `cover`, `section`, `default`, `two-cols` (`::left::`/`::right::`), `statement`, `end` |
-| `components/`   | `InesdiWordmark`, `BrandStrip`                                                           |
+| `components/`   | Brand: `InesdiWordmark`, `BrandStrip`. Content: `TopicRow`, `PretrainingCompression`, `AttentionArcs`, `ContextWindowZones`, `GriefSpiral` |
 | `styles/`       | Brand tokens and helper classes: `ine-card`, `ine-card--yellow`, `ine-card--cyan`, `ine-todo` |
 
 Content slides take a `minutes` frontmatter field (e.g. `minutes: 25–50`) that shows as a chip in the corner; section slides take `number` and `minutes`.

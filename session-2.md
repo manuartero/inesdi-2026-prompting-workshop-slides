@@ -184,12 +184,82 @@ minutes: 70–85
 <div class="ine-todo mt-6">TODO: captura de un Proyecto «Atención al cliente de Peluda»</div>
 
 ---
+minutes: 70–85
+clicks: 1
+---
+
+# La responsabilidad no se delega
+
+<blockquote class="text-xl">
+
+La IA es una herramienta. **La responsabilidad sigue siendo tuya.**
+
+</blockquote>
+
+<div class="flex flex-col gap-2 mt-4">
+  <TopicRow title="Una respuesta a un cliente que ofende" tone="warning">tuya</TopicRow>
+  <TopicRow title="Un riesgo de un contrato que no viste" tone="warning">tuyo</TopicRow>
+  <TopicRow title="Una cifra inventada en un informe" tone="warning">tuya</TopicRow>
+</div>
+
+<p v-click class="text-center text-lg italic mt-6">«Copiar y pegar sin revisar no es usar bien la IA: <b>es una negligencia</b>.»</p>
+
+---
+minutes: 70–85
+---
+
+# Cinco hábitos
+
+<div class="flex flex-col gap-2 mt-2">
+  <TopicRow title="Revísalo todo">si llega a un cliente, a un contrato o a dirección, ha pasado antes por tus ojos</TopicRow>
+  <TopicRow title="Entiende lo que entregas">si no sabes explicarlo, no lo entregues: pídele que te lo explique</TopicRow>
+  <TopicRow title="Itera">la primera respuesta rara vez es la mejor</TopicRow>
+  <TopicRow title="Dale contexto">no sabe nada de tu empresa hasta que se lo cuentas</TopicRow>
+  <TopicRow title="Comparte lo que funciona">un prompt que acierta, pásaselo a tu equipo</TopicRow>
+</div>
+
+---
 layout: section
 number: '06'
 minutes: 85–90 min
 ---
 
 # Cierre
+
+---
+minutes: 85–90
+---
+
+# ¿Me va a sustituir la IA?
+
+<div class="flex flex-col gap-2 mt-2">
+  <TopicRow title="Cuanto más la usas, más valor tiene tu criterio">el juicio, la intuición del negocio y el contexto aparecen justo cuando la IA se ocupa de lo superficial</TopicRow>
+  <TopicRow title="Todos creen que el que está en riesgo es otro equipo">cuando todas las áreas dicen lo mismo a la vez, es un sesgo</TopicRow>
+</div>
+
+<div class="ine-card ine-card--yellow mt-6">
+
+### El 88 % de quienes más rinden con IA dicen estar quemados
+
+La IA no reduce el trabajo, lo intensifica: más velocidad → más alcance → más horas. No te estás quedando atrás: la carga es real.
+
+<p class="text-xs mt-1">UC Berkeley · Upwork · HBR, 2026</p>
+
+</div>
+
+<!-- TODO: comprobar la fuente del 88 % antes de la sesión. -->
+
+---
+minutes: 85–90
+---
+
+# Es un proceso, no un momento
+
+<GriefSpiral class="mt-6" />
+
+<p class="text-center mt-6">No es lineal: es <b>una espiral</b>. Cada vuelta te acerca. Saber en qué fase estás lo acelera.</p>
+
+<p class="text-center text-xs">dev.to/manuartero · <i>Let's talk about grief</i></p>
 
 ---
 minutes: 85–90
