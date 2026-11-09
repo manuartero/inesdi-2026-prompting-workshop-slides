@@ -1,0 +1,16 @@
+{
+  "name": "inesdi-2026-prompting-workshop-slides",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "slidev session-1.md --open",
+    "dev:2": "slidev session-2.md --open",
+    "build": "slidev build session-1.md --out dist/session-1 && slidev build session-2.md --out dist/session-2",
+    "export": "slidev export session-1.md --output exports/session-1.pdf && slidev export session-2.md --output exports/session-2.pdf"
+  },
+  "devDependencies": {
+    "@slidev/cli": "^53.1.0",
+    "@slidev/theme-default": "^0.25.0",
+    "playwright-chromium": "^1.65.0"
+  }
+}

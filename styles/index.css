@@ -1,0 +1,320 @@
+/* INESDI look & feel, taken from the school's 2026 PPT template and PDFs:
+   dark ink background, yellow top band, cyan vertical stripe, light grotesk type. */
+:root {
+  --ine-ink: #201e23;
+  --ine-ink-soft: #3a373f;
+  --ine-paper: #f4f4f4;
+  --ine-yellow: #ffc000;
+  --ine-cyan: #00ffff;
+  --ine-navy: #00449b;
+  --ine-green: #9aae04;
+  --ine-muted: #6b6870;
+}
+
+.slidev-layout {
+  font-family: 'Albert Sans', ui-sans-serif, system-ui, sans-serif;
+  font-weight: 300;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.slidev-layout h1,
+.slidev-layout h2,
+.slidev-layout h3 {
+  font-weight: 300;
+  letter-spacing: -0.01em;
+  line-height: 1.1;
+}
+
+.slidev-layout strong {
+  font-weight: 600;
+}
+
+/* ---------- brand pieces ---------- */
+.ine-wordmark {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--ine-ink);
+}
+.ine-wordmark__name {
+  font-size: 1.9rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+}
+.ine-wordmark__tag {
+  font-size: 0.45rem;
+  font-weight: 500;
+  line-height: 1.15;
+  text-transform: uppercase;
+  border-left: 1px solid currentColor;
+  padding-left: 0.35rem;
+}
+.ine-wordmark--light {
+  color: white;
+}
+
+.ine-strip {
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 10px;
+  display: flex;
+}
+.ine-strip__ink {
+  width: 25%;
+  background: var(--ine-ink);
+}
+.ine-strip__cyan {
+  width: 5%;
+  background: var(--ine-cyan);
+}
+.ine-strip__yellow {
+  flex: 1;
+  background: var(--ine-yellow);
+}
+
+.ine-chip {
+  position: absolute;
+  top: 26px;
+  right: 40px;
+  font-size: 0.7rem;
+  font-weight: 500;
+  padding: 0.15rem 0.6rem;
+  border-radius: 999px;
+  background: var(--ine-ink);
+  color: var(--ine-yellow);
+}
+
+/* ---------- dark layouts: cover, section, end ---------- */
+.ine-dark {
+  background: var(--ine-ink);
+  color: white;
+}
+.ine-cover__band {
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 15%;
+  background: var(--ine-yellow);
+  display: flex;
+  align-items: center;
+  padding-left: 12%;
+}
+.ine-cover__stripe {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 2%;
+  width: 2.8%;
+  background: var(--ine-cyan);
+}
+.ine-cover__body {
+  position: absolute;
+  inset: 15% 8% 0 12%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.ine-cover h1 {
+  font-size: 2.6rem;
+  color: white;
+  margin-bottom: 0.6rem;
+}
+.ine-cover h1 + p {
+  font-size: 1.2rem;
+  color: var(--ine-yellow);
+  opacity: 1;
+}
+.ine-cover__session {
+  margin-top: 2rem;
+  font-size: 1rem;
+}
+.ine-cover__teacher {
+  font-size: 0.9rem;
+  color: #bdbbc2;
+  margin-top: 0.2rem;
+}
+
+.ine-section__body {
+  position: absolute;
+  inset: 0 8% 0 12%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.ine-section__number {
+  font-size: 4.5rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--ine-yellow);
+  margin: 0;
+}
+.ine-section h1 {
+  font-size: 2.6rem;
+  color: white;
+}
+.ine-section p {
+  color: #d8d6dc;
+}
+.ine-section__minutes {
+  margin-top: 1.5rem;
+  font-size: 0.85rem;
+  color: var(--ine-cyan) !important;
+}
+
+.ine-end__body {
+  position: absolute;
+  inset: 15% 8% 0 12%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.ine-end__thanks {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 0.95;
+  color: white;
+  margin: 0 0 1.5rem;
+}
+
+/* ---------- light content layouts ---------- */
+.ine-light {
+  background: var(--ine-paper);
+  color: var(--ine-ink);
+}
+.ine-default__body {
+  padding: 2.4rem 3.5rem 2.5rem;
+  height: 100%;
+}
+.ine-default h1 {
+  font-size: 1.9rem;
+  margin-bottom: 1.2rem;
+  color: var(--ine-ink);
+}
+.ine-default h1::after {
+  content: '';
+  display: block;
+  width: 3rem;
+  height: 4px;
+  margin-top: 0.6rem;
+  background: var(--ine-yellow);
+}
+.ine-default h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--ine-navy);
+}
+.ine-default ul {
+  list-style: none;
+  padding-left: 0;
+}
+.ine-default li {
+  position: relative;
+  padding-left: 1.1rem;
+  margin: 0.4rem 0;
+}
+.ine-default li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 0.45rem;
+  height: 0.45rem;
+  background: var(--ine-cyan);
+  outline: 1px solid var(--ine-ink);
+}
+.ine-default table {
+  font-size: 0.8rem;
+}
+.ine-default th {
+  background: var(--ine-ink);
+  color: white;
+  font-weight: 500;
+}
+.ine-default blockquote {
+  border-left: 4px solid var(--ine-yellow);
+  background: white;
+  padding: 0.6rem 1rem;
+  color: var(--ine-ink);
+}
+.ine-default pre {
+  font-size: 0.7rem;
+}
+.ine-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+.ine-footer {
+  position: absolute;
+  inset: auto 0 0 0;
+  height: 26px;
+  background: var(--ine-navy);
+  color: white;
+  font-size: 0.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5rem;
+}
+
+/* ---------- statement: one big idea on yellow ---------- */
+.ine-statement {
+  background: var(--ine-yellow);
+  color: var(--ine-ink);
+}
+.ine-statement__body {
+  position: absolute;
+  inset: 0 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.ine-statement h1 {
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+.ine-statement p {
+  font-size: 1.1rem;
+}
+
+/* ---------- helpers for slides ---------- */
+.ine-card {
+  background: white;
+  border-top: 4px solid var(--ine-ink);
+  padding: 0.7rem 0.9rem;
+  font-size: 0.85rem;
+}
+.ine-card h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+.ine-card--cyan {
+  border-top-color: var(--ine-cyan);
+}
+.ine-card--yellow {
+  border-top-color: var(--ine-yellow);
+}
+.ine-todo {
+  border: 2px dashed var(--ine-muted);
+  color: var(--ine-muted);
+  padding: 0.6rem 0.9rem;
+  font-size: 0.8rem;
+}
+
+/* ---------- overrides of the default theme's prose spacing ---------- */
+.ine-end__thanks,
+.ine-section__number {
+  line-height: 1 !important;
+}
+.ine-statement p,
+.ine-section h1 + p {
+  opacity: 1 !important;
+}
+.ine-default pre.shiki,
+.ine-default pre {
+  background: white !important;
+  border-left: 4px solid var(--ine-ink);
+  padding: 0.6rem 0.8rem;
+}
