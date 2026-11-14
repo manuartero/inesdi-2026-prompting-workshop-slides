@@ -47,16 +47,14 @@ No es por ego: es para que sepan quién les habla y por qué. Un minuto, como mu
 
 ---
 
-# Hoy, en 90 minutos
+# Esta sesión
 
-| Min   | Bloque                                |
-| ----- | ------------------------------------- |
-| 0–10  | El mismo encargo, dos prompts         |
-| 10–25 | Cómo «piensa» un LLM                  |
-| 25–50 | Anatomía de un prompt                 |
-| 50–70 | Alucinaciones                         |
-| 70–85 | Práctica guiada · Caso 1 · Tickets    |
-| 85–90 | Cierre: chuleta y actividad           |
+- La misma tarea, 2x prompts diferentes
+- Cómo «piensa» un LLM
+- Anatomía de un prompt
+- Alucinaciones
+- Práctica guiada: el caso de los tickets
+- Cierre: chuleta y actividad
 
 ---
 layout: section
@@ -64,7 +62,7 @@ number: '01'
 minutes: 0–10 min
 ---
 
-# El mismo encargo, dos prompts
+# La misma tarea, 2x prompts diferentes
 
 Demo en directo antes de explicar nada
 
