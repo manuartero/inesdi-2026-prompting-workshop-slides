@@ -22,48 +22,27 @@ Máster de FP en Inteligencia Artificial Aplicada a la Empresa
 
 # Sobre mí
 
-<div class="grid grid-cols-[1.1fr_1fr] gap-8 -mt-2">
-<div>
+<div class="text-2xl font-semibold leading-tight mt-2">Manu Artero Anguita</div>
+<div class="text-base mt-1">Principal Engineer en la Plataforma Global de Vídeo de Telefónica</div>
 
-<p class="text-xl font-semibold leading-tight">Manu Artero Anguita</p>
-<p class="text-sm mt-1">Ingeniero de software desde 2012, hoy en el área de Vídeo de Telefónica.</p>
-
-<div class="flex flex-col gap-1 mt-3">
-  <TopicRow title="Ahora">agentes, skills y servidores MCP para el equipo de Vídeo</TopicRow>
-  <TopicRow title="Antes">backend y frontend; líder de backend en Doctor24</TopicRow>
-  <TopicRow title="En INESDI">profesor de Frontend Frameworks (React)</TopicRow>
-  <TopicRow title="Formación">Informática, Universidad Complutense</TopicRow>
+<div class="grid grid-cols-[auto_6.5rem_1fr] gap-x-4 gap-y-3 items-center mt-6 text-base">
+  <span class="inline-flex items-center justify-center w-10 h-10 rounded-full" style="background: var(--ine-yellow)"><ph-robot-fill class="text-xl" /></span><b>Ahora</b><span>agentes, skills y servidores MCP: la plataforma de tooling de IA del equipo</span>
+  <span class="inline-flex items-center justify-center w-10 h-10 rounded-full" style="background: #dbeafe; color: #1d4ed8"><ph-stack-fill class="text-xl" /></span><b>Antes</b><span>full stack; líder de backend en Doctor24 y de equipo en Living Apps</span>
+  <span class="inline-flex items-center justify-center w-10 h-10 rounded-full" style="background: #dcfce7; color: #15803d"><ph-chalkboard-teacher-fill class="text-xl" /></span><b>En INESDI</b><span>profesor de Frontend Frameworks (React)</span>
+  <span class="inline-flex items-center justify-center w-10 h-10 rounded-full" style="background: #f3e8ff; color: #7e22ce"><ph-graduation-cap-fill class="text-xl" /></span><b>Formación</b><span>Informática, Universidad Complutense de Madrid</span>
 </div>
 
-
-
-</div>
-<div>
-<div class="ine-card ine-card--accent">
-
-### Escribía en dev.to
-
-66 artículos. El último que dio que hablar: **About Wizards & Warlocks, Programmers & Vibe Coders**
-
-> «The Patron giveth, and the Patron can taketh away.»
-
-<p class="text-sm">El mago estudia para tener su magia; el brujo se la presta un patrón, que puede cambiar las condiciones cuando quiera. Programar con IA se parece mucho a lo segundo.</p>
-
-</div>
-
-<div class="flex gap-4 mt-5 text-xs items-center whitespace-nowrap">
-  <a href="https://www.linkedin.com/in/manu-artero/" class="flex items-center gap-1.5"><ph-linkedin-logo-fill class="text-xl" /> manu-artero</a>
-  <a href="https://github.com/manuartero" class="flex items-center gap-1.5"><ph-github-logo-fill class="text-xl" /> manuartero</a>
-  <a href="https://dev.to/manuartero" class="flex items-center gap-1.5"><ph-dev-to-logo-fill class="text-xl" /> manuartero</a>
-</div>
-</div>
+<div class="flex gap-8 mt-8 text-sm items-center whitespace-nowrap">
+  <a href="https://www.linkedin.com/in/manu-artero/" class="flex items-center gap-2"><ph-linkedin-logo-fill class="text-3xl" style="color: #0a66c2" /> manu-artero</a>
+  <a href="https://github.com/manuartero" class="flex items-center gap-2"><ph-github-logo-fill class="text-3xl" style="color: #181717" /> manuartero</a>
+  <a href="https://dev.to/manuartero" class="flex items-center gap-2"><ph-dev-to-logo-fill class="text-3xl" style="color: #0a0a0a" /> manuartero</a>
 </div>
 
 <!--
 No es por ego: es para que sepan quién les habla y por qué. Un minuto, como mucho.
 - Trabajo con agentes de IA a diario: es mi trabajo ahora mismo, no algo que he leído.
 - Ya daba clase en INESDI (Frontend Frameworks): esto es lo mismo, pero sin código.
-- El post de los magos y los brujos: dominar la herramienta sin olvidar el oficio. Enlaza con el cierre («¿puede la IA hacer esto por mí?»).
+- Si sale el tema: escribía en dev.to; el último post que dio que hablar, «About Wizards & Warlocks, Programmers & Vibe Coders» (el mago estudia su magia; al brujo se la presta un patrón, que puede cambiar las condiciones).
 -->
 
 ---
