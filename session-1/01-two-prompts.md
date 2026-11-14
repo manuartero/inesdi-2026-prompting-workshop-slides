@@ -53,7 +53,7 @@ No explicar nada todavía.
 
 # El prompt de una línea, revisado contra el sistema
 
-<div class="flex flex-col gap-1 mt-1">
+<div class="topic-list mt-1">
   <TopicRow title="Se inventa el esquema">«No tenías un esquema propio, así que he usado este»: 25 categorías. En la misma respuesta mezcla «Salud» y «Salud/calidad», y separa «Cobros», «Pago» y «Facturas».</TopicRow>
   <TopicRow title="Mete a una gata de Colombia en el problema de la receta">0123: Luna es una gata en Colombia, con otro fabricante. La receta que cambió es la del pienso de perro adulto en España.</TopicRow>
   <TopicRow title="«Puede ser un fallo en una tanda de cobros»">0009 y 0062 tienen dos suscripciones: dos pedidos el mismo día, con importes distintos. 0033 es un cobro después de la baja. 0020 no tiene ningún cobro duplicado en el sistema.</TopicRow>

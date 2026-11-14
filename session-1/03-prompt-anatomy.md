@@ -5,55 +5,7 @@ number: '03'
 
 # Anatomía de un prompt
 
-Rol · Contexto · Tarea · Formato · Restricciones · Ejemplos
-
----
-
-# Las seis piezas
-
-<div class="grid grid-cols-3 gap-4 mt-2">
-<div class="ine-card ine-card--accent"><h3>Rol</h3>Quién es al hacer el trabajo.</div>
-<div class="ine-card ine-card--accent"><h3>Contexto</h3>Lo que sabe alguien de tu empresa y el modelo no.</div>
-<div class="ine-card ine-card--accent"><h3>Tarea</h3>Qué tiene que hacer, con un verbo claro.</div>
-<div class="ine-card"><h3>Formato</h3>Tabla, lista, columnas, longitud.</div>
-<div class="ine-card"><h3>Restricciones</h3>Qué no debe hacer.</div>
-<div class="ine-card"><h3>Ejemplos</h3>Uno o dos casos resueltos.</div>
-</div>
-
-<!-- La siguiente slide recorre las seis piezas sobre el prompt B de la demo inicial. -->
-
----
-
-# Las piezas, en el prompt de la demo
-
-```text {1|3|5-8|10|12-19|21-25}{maxHeight:'60vh'}
-📎 peluda-tickets-hoy.csv
-
-<rol>Responsable del equipo de atención al cliente de Peluda</rol>
-
-<contexto>
-Peluda vende comida para mascotas por suscripción: cada 4 semanas enviamos un pedido a casa. Hay tres planes: Básico, Completo y Cuidado.
-Hace unas semanas cambiamos la receta del pienso de perro adulto en España.
-</contexto>
-
-<goal>Clasifica los tickets por categoría y urgencia.</goal>
-
-<formato>
-1. Tabla con los 15 tickets más urgentes: ID | Categoría | Urgencia | Resumen | Por qué urgente.
-2. Tabla con cuántos tickets hay de cada categoría y de cada urgencia.
-3. Si varios tickets hablan del mismo problema, cuáles son y qué tienen en común.
-Categorías: Envío, Facturación, Cambio de plan, Baja, Salud de la mascota, Cuenta, Otro.
-Urgencia Alta: salud de una mascota, mascota sin comida, cobro indebido o amenaza…
-</formato>
-
-<restricciones>
-- Lee todos los tickets del fichero.
-- Si un ticket trata dos asuntos, clasifícalo por el más grave.
-- No inventes nada. Si no puedes decidir, escribe «Revisar».
-</restricciones>
-```
-
-<!-- Es el prompt que lanzamos en la demo inicial. Un clic por pieza: material adjunto, rol, contexto, tarea (goal), formato y restricciones. No lleva ejemplo: el formato ya deja claro qué tabla queremos, así que aquí no hace falta (con una salida menos obvia, sí). El prompt completo está en demos/sesion-1/01-dos-prompts.md. -->
+Adjunto · Rol · Contexto · Goal · Formato · Restricciones
 
 ---
 
@@ -65,24 +17,60 @@ Urgencia Alta: salud de una mascota, mascota sin comida, cobro indebido o amenaz
 
 <p class="text-center text-xs mt-2">Guía de Anthropic. CO-STAR, RTF y compañía son variantes de la misma idea: no hace falta memorizarlas.</p>
 
+<!--
+Esto es lo oficial. Completo y correcto, pero nadie escribe así en su día a día: no le sirve a nadie.
+Lo que sí uso yo son seis piezas. Las vemos sobre el prompt de la demo.
+-->
+
+---
+clicks: 6
+---
+
+# Las piezas, en el prompt de la demo
+
+<PromptPieces :active="$clicks" />
+
+<!-- Es el prompt B que lanzamos en la demo inicial. Un clic por pieza: adjunto, rol, contexto, goal, formato y restricciones. El prompt completo está en demos/sesion-1/01-dos-prompts.md. -->
+
+---
+
+# Las seis piezas
+
+<div class="grid grid-cols-3 gap-4 mt-2">
+<div class="ine-piece"><span class="ine-piece__icon"><span class="i-ph-paperclip-fill" /></span><h3>Adjunto <code>📎</code></h3><p>Los datos de verdad: el fichero, el contrato, los tickets.</p></div>
+<div class="ine-piece"><span class="ine-piece__icon"><span class="i-ph-identification-badge-fill" /></span><h3>Rol <code>&lt;rol&gt;</code></h3><p>Desde qué puesto hace el trabajo.</p></div>
+<div class="ine-piece"><span class="ine-piece__icon"><span class="i-ph-buildings-fill" /></span><h3>Contexto <code>&lt;contexto&gt;</code></h3><p>Lo que sabe alguien de tu empresa y el modelo no.</p></div>
+<div class="ine-piece"><span class="ine-piece__icon"><span class="i-ph-target-fill" /></span><h3>Goal <code>&lt;goal&gt;</code></h3><p>Qué tiene que conseguir, con un verbo claro.</p></div>
+<div class="ine-piece"><span class="ine-piece__icon"><span class="i-ph-table-fill" /></span><h3>Formato <code>&lt;formato&gt;</code></h3><p>Cómo quieres el resultado: tabla, columnas, longitud.</p></div>
+<div class="ine-piece"><span class="ine-piece__icon"><span class="i-ph-prohibit-fill" /></span><h3>Restricciones <code>&lt;restricciones&gt;</code></h3><p>Qué no debe hacer.</p></div>
+</div>
+
 ---
 clicks: 1
 ---
 
 # Trucos que siempre funcionan
 
-<div class="flex flex-col gap-2 mt-2">
-  <TopicRow title="Carga el contexto">pega el documento, el ticket, los datos</TopicRow>
-  <TopicRow title="Enséñalo, no lo expliques">uno o dos ejemplos del resultado que quieres</TopicRow>
-  <TopicRow title="Di qué no debe hacer">«no inventes cifras», «no cambies el tono»</TopicRow>
-  <TopicRow title="Define cuándo está terminado">tabla con estas columnas, máximo 120 palabras</TopicRow>
-  <TopicRow title="Itera, no empieces de cero">corrige en la misma conversación</TopicRow>
-  <div v-click>
-    <TopicRow title="A los LLM les encantan las etiquetas" tone="warning">
-      <code>&lt;ticket&gt;…&lt;/ticket&gt;</code>, <code>&lt;contrato&gt;…&lt;/contrato&gt;</code>: el nombre de la etiqueta ya le dice qué está leyendo
-    </TopicRow>
-  </div>
+<div class="topic-list mt-2">
+  <TopicRow title="Carga el contexto" icon="i-ph-paperclip-fill">pega el documento, el ticket, los datos</TopicRow>
+  <TopicRow title="Define claramente el goal" icon="i-ph-target-fill">qué es «terminado». En la vida real es lo más difícil: articular qué quieres ya es un buen ejercicio</TopicRow>
+  <TopicRow title="Di qué no debe hacer" icon="i-ph-prohibit-fill">«no inventes cifras», «no cambies el tono»</TopicRow>
+  <TopicRow title="Opcional: enséñalo con un ejemplo" icon="i-ph-lightbulb-fill">uno o dos casos resueltos, si el formato no basta</TopicRow>
+  <TopicRow v-click title="A los LLM les encantan las etiquetas" tone="warning" icon="i-ph-code-fill">
+    <code>&lt;ticket&gt;…&lt;/ticket&gt;</code>, <code>&lt;contrato&gt;…&lt;/contrato&gt;</code>: el nombre de la etiqueta ya le dice qué está leyendo
+  </TopicRow>
 </div>
+
+<p v-click="1" class="text-xs mt-4">Lo recomiendan las guías oficiales de <b>Anthropic</b>, <b>OpenAI</b> y <b>Google</b>. OpenAI lo midió: con documentos largos, las etiquetas funcionan bien y JSON, «particularmente mal».</p>
+
+<!--
+Siempre preguntan de dónde sale lo de las etiquetas. Las fuentes, todas oficiales:
+- Anthropic, «Prompting best practices» → «Structure prompts with XML tags»: "XML tags help Claude parse complex prompts unambiguously". platform.claude.com/docs/en/build-with-claude/prompt-engineering/use-xml-tags
+- OpenAI, «Prompt engineering» → «Message formatting with Markdown and XML»: "XML tags can help delineate where one piece of content begins and ends". developers.openai.com/api/docs/guides/prompt-engineering
+- OpenAI, «GPT-4.1 Prompting Guide» → «Delimiters»: probaron varios delimitadores con documentos largos. "XML performed well in our long context testing." / "JSON performed particularly poorly." developers.openai.com/cookbook/examples/gpt4-1_prompting_guide
+- Google, «Prompt design strategies» (Gemini 3): "XML-style tags (e.g., <context>, <task>) or Markdown headings are effective". aistudio.google.com/docs/prompting-strategies
+Los nombres de las etiquetas los eliges tú: no hay una lista oficial. Lo que importa es que sean descriptivos y consistentes.
+-->
 
 ---
 

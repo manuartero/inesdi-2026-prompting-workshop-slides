@@ -49,7 +49,7 @@ Imágenes de Marvel: uso ilustrativo en clase.
 
 <div class="grid grid-cols-2 gap-8 mt-2 items-center">
 <PretrainingCompression />
-<div class="flex flex-col gap-2">
+<div class="topic-list">
   <TopicRow title="Comprime con pérdida">los detalles finos se emborronan</TopicRow>
   <TopicRow title="Predice texto plausible">no consulta una base de datos: escribe lo que <i>suena</i> bien</TopicRow>
   <TopicRow title="Solo ve nítido lo que le das">tu empresa, tus clientes y tus contratos no están en el JPEG</TopicRow>
@@ -85,7 +85,7 @@ Por eso una conversación el doble de larga es mucho más del doble de trabajo.
 
 # Las conversaciones largas se degradan
 
-<div class="flex flex-col gap-2 mt-2">
+<div class="topic-list mt-2">
   <TopicRow title="Su atención es limitada">cuanto más larga la conversación, más se reparte</TopicRow>
   <TopicRow title="Lo reciente se ve nítido">lo del principio se vuelve borroso</TopicRow>
 </div>
@@ -100,15 +100,15 @@ Por eso una conversación el doble de larga es mucho más del doble de trabajo.
 
 # El modelo no recuerda: la aplicación toma notas
 
-<div class="flex flex-col gap-2 mt-2">
+<div class="topic-list mt-2">
   <TopicRow title="El modelo">no guarda nada entre chats: solo ve lo que le llega en cada conversación</TopicRow>
   <TopicRow title="La conversación">su memoria de trabajo: lo que hay en el chat y lo que adjuntas</TopicRow>
   <TopicRow title="El proyecto">instrucciones y ficheros que la aplicación añade a cada chat del proyecto</TopicRow>
-  <TopicRow title="Tú">la aplicación va tomando notas de ti entre chats: a qué te dedicas, cómo te gusta que responda</TopicRow>
+  <TopicRow title="Tú (el usuario)">la aplicación va tomando notas de ti entre chats: a qué te dedicas, cómo te gusta que responda</TopicRow>
   <TopicRow title="Congelado en el tiempo" tone="warning">sabe lo que había hasta su entrenamiento; lo de después, solo si lo busca en la web o se lo das</TopicRow>
 </div>
 
-<p class="text-sm mt-4">Claude y ChatGPT son el modelo más un programa alrededor que gestiona esa memoria. Lo que recuerda son notas que decide guardar, no todo.</p>
+<p class="mt-5 text-[0.95rem]">Claude y ChatGPT son el modelo más un programa alrededor que gestiona esa memoria: el <span class="ine-mark">harness</span>.</p>
 
 <!--
 Antes se decía «cada chat empieza de cero». Hoy el modelo sigue sin memoria, pero la aplicación (el «harness») la simula por capas: conversación, proyecto y memoria del usuario.
@@ -119,13 +119,13 @@ Antes se decía «cada chat empieza de cero». Hoy el modelo sigue sin memoria, 
 
 ---
 
-# Cuatro límites, un remedio
+# Los límites
 
-<div class="flex flex-col gap-2 mt-2">
-  <TopicRow title="Memoria borrosa">es un JPEG borroso de internet</TopicRow>
-  <TopicRow title="Atención limitada">las conversaciones largas se degradan</TopicRow>
-  <TopicRow title="Memoria por capas">recuerda notas, no todo</TopicRow>
-  <TopicRow title="Fecha de corte">congelado en el tiempo</TopicRow>
+<div class="topic-list mt-2">
+  <TopicRow title="Memoria borrosa" icon="i-ph-file-jpg-fill">es un JPEG borroso de internet</TopicRow>
+  <TopicRow title="Atención limitada" icon="i-ph-flashlight-fill">las conversaciones largas se degradan</TopicRow>
+  <TopicRow title="Memoria por capas" icon="i-ph-notepad-fill">recuerda notas, no todo</TopicRow>
+  <TopicRow title="Fecha de corte" icon="i-ph-calendar-x-fill">congelado en el tiempo</TopicRow>
 </div>
 
 <blockquote class="mt-6 text-lg">
@@ -133,5 +133,3 @@ Antes se decía «cada chat empieza de cero». Hoy el modelo sigue sin memoria, 
 Los cuatro empujan hacia lo mismo: **pon en la conversación lo que importa, y solo lo que importa.**
 
 </blockquote>
-
-El resto del taller son tácticas para eso.

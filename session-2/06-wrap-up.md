@@ -9,7 +9,7 @@ number: '06'
 
 # ¿Me va a sustituir la IA?
 
-<div class="flex flex-col gap-2 mt-2">
+<div class="topic-list mt-2">
   <TopicRow title="Cuanto más la usas, más valor tiene tu criterio">el juicio, la intuición del negocio y el contexto aparecen justo cuando la IA se ocupa de lo superficial</TopicRow>
   <TopicRow title="Todos creen que el que está en riesgo es otro equipo">cuando todas las áreas dicen lo mismo a la vez, es un sesgo</TopicRow>
 </div>

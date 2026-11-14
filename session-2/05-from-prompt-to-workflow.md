@@ -44,7 +44,7 @@ La IA es una herramienta. **La responsabilidad sigue siendo tuya.**
 
 </blockquote>
 
-<div class="flex flex-col gap-2 mt-4">
+<div class="topic-list mt-4">
   <TopicRow title="Una respuesta a un cliente que ofende" tone="warning">tuya</TopicRow>
   <TopicRow title="Un riesgo de un contrato que no viste" tone="warning">tuyo</TopicRow>
   <TopicRow title="Una cifra inventada en un informe" tone="warning">tuya</TopicRow>
@@ -56,7 +56,7 @@ La IA es una herramienta. **La responsabilidad sigue siendo tuya.**
 
 # Cinco hábitos
 
-<div class="flex flex-col gap-2 mt-2">
+<div class="topic-list mt-2">
   <TopicRow title="Revísalo todo">si llega a un cliente, a un contrato o a dirección, ha pasado antes por tus ojos</TopicRow>
   <TopicRow title="Entiende lo que entregas">si no sabes explicarlo, no lo entregues: pídele que te lo explique</TopicRow>
   <TopicRow title="Itera">la primera respuesta rara vez es la mejor</TopicRow>
