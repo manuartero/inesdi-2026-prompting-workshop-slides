@@ -9,6 +9,7 @@
     { "source": "/session-2", "destination": "/session-2/", "permanent": false }
   ],
   "rewrites": [
+    { "source": "/chuleta.pdf", "destination": "/session-1/chuleta.pdf" },
     { "source": "/session-1/:path*", "destination": "/session-1/index.html" },
     { "source": "/session-2/:path*", "destination": "/session-2/index.html" }
   ]

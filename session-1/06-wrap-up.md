@@ -16,7 +16,7 @@ number: '06'
 
 Plantilla de prompt + checklist antialucinaciones.
 
-<div class="ine-todo mt-2">TODO: enlace al PDF</div>
+<p class="mt-2"><a href="https://inesdi-2026-prompting-workshop-slid.vercel.app/chuleta.pdf" class="inline-flex items-center gap-2 font-semibold !border-none"><ph-file-pdf-fill class="text-xl" /> Descargar la chuleta (PDF)</a></p>
 
 </div>
 <div class="ine-card">
