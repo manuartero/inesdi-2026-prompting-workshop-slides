@@ -58,7 +58,7 @@ minutes: 0–10
 Clasifica estos tickets.
 ```
 
-<img src="/captures/s1-dos-prompts-a.png" class="mt-3 max-h-[36vh] border border-gray-300" alt="Resultado del prompt de una línea: un esquema de prioridades y categorías inventado por el modelo" />
+<img src="/captures/s1-dos-prompts-a.png" class="mt-3 w-full border border-gray-300" style="height: 200px; object-fit: cover; object-position: top" alt="Resultado del prompt de una línea: un esquema de prioridades y categorías inventado por el modelo" />
 
 ::right::
 
