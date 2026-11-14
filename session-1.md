@@ -28,7 +28,7 @@ Máster de FP en Inteligencia Artificial Aplicada a la Empresa
 <div class="grid grid-cols-[auto_6.5rem_1fr] gap-x-4 gap-y-3 items-center mt-6 text-base">
   <span class="inline-flex items-center justify-center w-10 h-10 rounded-full" style="background: var(--ine-yellow)"><ph-robot-fill class="text-xl" /></span><b>Ahora</b><span>agentes, skills y servidores MCP: la plataforma de tooling de IA del equipo</span>
   <span class="inline-flex items-center justify-center w-10 h-10 rounded-full" style="background: #dbeafe; color: #1d4ed8"><ph-stack-fill class="text-xl" /></span><b>Antes</b><span>full stack; líder de backend en Doctor24 y de equipo en Living Apps</span>
-  <span class="inline-flex items-center justify-center w-10 h-10 rounded-full" style="background: #dcfce7; color: #15803d"><ph-chalkboard-teacher-fill class="text-xl" /></span><b>En INESDI</b><span>profesor de Frontend Frameworks (React)</span>
+  <span class="inline-flex items-center justify-center w-10 h-10 rounded-full" style="background: #dcfce7; color: #15803d"><ph-chalkboard-teacher-fill class="text-xl" /></span><b>En INESDI</b><span>profesor de Frontend Frameworks (React) → Prompt engineering estratégico</span>
   <span class="inline-flex items-center justify-center w-10 h-10 rounded-full" style="background: #f3e8ff; color: #7e22ce"><ph-graduation-cap-fill class="text-xl" /></span><b>Formación</b><span>Informática, Universidad Complutense de Madrid</span>
 </div>
 
