@@ -86,6 +86,31 @@ No explicar nada todavía.
 minutes: 0–10
 ---
 
+# El prompt de una línea, revisado contra el sistema
+
+<div class="flex flex-col gap-1 mt-1">
+  <TopicRow title="Se inventa el esquema">«No tenías un esquema propio, así que he usado este»: 25 categorías. En la misma respuesta mezcla «Salud» y «Salud/calidad», y separa «Cobros», «Pago» y «Facturas».</TopicRow>
+  <TopicRow title="Mete a una gata de Colombia en el problema de la receta">0123: Luna es una gata en Colombia, con otro fabricante. La receta que cambió es la del pienso de perro adulto en España.</TopicRow>
+  <TopicRow title="«Puede ser un fallo en una tanda de cobros»">0009 y 0062 tienen dos suscripciones: dos pedidos el mismo día, con importes distintos. 0033 es un cobro después de la baja. 0020 no tiene ningún cobro duplicado en el sistema.</TopicRow>
+  <TopicRow title="Mismo caso, distinta urgencia">Dos bajas por fallecimiento: 0024 es «Urgente» y 0058, «Alta».</TopicRow>
+  <TopicRow title="Cuenta mal su propia tabla" tone="warning">Dice «98 normales y 11 bajas». En su tabla hay 97 y 12.</TopicRow>
+</div>
+
+<p class="text-sm mt-4">Suena seguro y casi todo es verdad. Por eso cuesta ver lo que no lo es.</p>
+
+<!--
+Comprobado contra el CMS (14/11). Lo que SÍ hizo bien, para ser justos: ve el patrón de la receta (0004/0145, 0015, 0063), propone fusionar 0004 y 0145 (es la misma clienta) y sus «Ver 00xx» enlazan tickets del mismo cliente (usa la columna ID cliente).
+- 0009 Lucía: 23/10, ORD-…296361 29 € (Básico, Coco) y ORD-…296182 45 € (Completo, Bruno).
+- 0062 (Colombia): 13/10 y 10/11, dos pedidos cada día, 129.000 y 199.000 COP, dos suscripciones.
+- 0020 (México): una sola suscripción, ningún pedido con dos cobros.
+- 0123: PRD-KIBBLE-ADULT-CAT-LATAM, fabricante Alimentos del Bajío. La receta nueva es PRD-KIBBLE-ADULT-DOG, solo España, de NutriCan.
+Mensaje: no son mentiras grandes, son conclusiones sin datos. El modelo no sabía nada de Peluda y rellenó los huecos.
+-->
+
+---
+minutes: 0–10
+---
+
 # Con estructura, el resultado se puede usar
 
 <div class="grid grid-cols-3 gap-5 mt-1">
