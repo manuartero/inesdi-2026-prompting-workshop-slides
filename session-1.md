@@ -9,6 +9,7 @@ fonts:
   mono: JetBrains Mono
   weights: '300,400,500,600,700'
 transition: fade
+favicon: favicon.svg
 layout: cover
 session: Sesión 1 · Prompts estructurados · martes 24/11/2026
 teacher: Manuel Artero Anguita
