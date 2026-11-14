@@ -158,16 +158,6 @@ Prompt B probado el 14/11 con Opus 5.5 sobre los 151 tickets de hoy.
 -->
 
 ---
-layout: statement
----
-
-# Tiene potencia de sobra.<br>**El rumbo lo pones tú.**
-
-Puede hacer mucho más que tu trabajo. Si no la guías, hará mucho… pero no lo que necesitas.
-
-<!-- Enlaza con la demo: el prompt A hizo muchísimo (151 tickets, un patrón, 25 categorías) y aun así no era lo que queríamos. -->
-
----
 
 # Peluda: la empresa de este taller
 
@@ -282,7 +272,7 @@ El mismo poder, pero con los límites conocidos y los fallos entendidos.
 </div>
 </div>
 
-> Con los LLM estamos a mitad de esa conversión. Las próximas slides marcan el techo.
+> Con los LLM estamos a mitad de camino. Las próximas slides marcan el techo.
 
 <!--
 Magneto en los cómics de los 70–80 frente al Magneto que dirige la escuela (X-Men, 1993).

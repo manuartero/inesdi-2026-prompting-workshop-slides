@@ -42,7 +42,7 @@ number: '01'
 
 # Lo que vimos el martes pasado
 
-- Tiene potencia de sobra: **el rumbo lo pones tú**.
+- Con los LLM estamos **a mitad de camino**: mucho poder, techo por conocer.
 - **Rol · Contexto · Tarea · Formato · Restricciones · Ejemplos.**
 - Contra las alucinaciones: la fuente, «no consta», la cita literal.
 
