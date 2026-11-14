@@ -34,7 +34,7 @@ Máster de FP en Inteligencia Artificial Aplicada a la Empresa
 
 <div class="flex gap-8 mt-8 text-sm items-center whitespace-nowrap">
   <a href="https://www.linkedin.com/in/manu-artero/" class="flex items-center gap-2"><ph-linkedin-logo-fill class="text-3xl" style="color: #0a66c2" /> manu-artero</a>
-  <a href="https://github.com/manuartero" class="flex items-center gap-2"><ph-github-logo-fill class="text-3xl" style="color: #181717" /> manuartero</a>
+  <a href="https://github.com/manuartero" class="flex items-center gap-2"><ph-github-logo-fill class="text-3xl" style="color: #8250df" /> manuartero</a>
   <a href="https://dev.to/manuartero" class="flex items-center gap-2"><ph-dev-to-logo-fill class="text-3xl" style="color: #0a0a0a" /> manuartero</a>
 </div>
 
