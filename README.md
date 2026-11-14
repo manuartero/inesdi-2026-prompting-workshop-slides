@@ -18,12 +18,15 @@ pnpm build      # both sessions as static sites in dist/
 
 | Path            | What                                                                                     |
 | --------------- | ---------------------------------------------------------------------------------------- |
-| `session-1.md`  | Session 1 · structured prompts                                                           |
-| `session-2.md`  | Session 2 · workflows                                                                    |
+| `session-1.md`  | Session 1 · structured prompts: headmatter, cover, about me and agenda, then one `src:` import per section |
+| `session-1/`    | Session 1 sections, one file each (`01-two-prompts.md` … `06-wrap-up.md`)                 |
+| `session-2.md`  | Session 2 · workflows, same shape                                                        |
+| `session-2/`    | Session 2 sections (`01-recap.md` … `06-wrap-up.md`)                                     |
+| `public/captures/` | Screenshots: the CMS (`cms-*.png`) and the demo results (`s1-*.png`)                  |
 | `layouts/`      | INESDI layouts: `cover`, `section`, `default`, `two-cols` (`::left::`/`::right::`), `statement`, `end` |
 | `components/`   | Brand: `InesdiWordmark`. Content: `TopicRow`, `PretrainingCompression`, `AttentionArcs`, `ContextWindowZones`, `GriefSpiral` |
 | `styles/`       | Brand tokens and helper classes: `ine-card`, `ine-card--accent`, `ine-todo` |
 
-Section slides take a `number` frontmatter field.
+Section slides take a `number` frontmatter field. To add a section, create its file and add a `src:` block to the session file.
 
 The examples use **Peluda**, a fictional pet-food subscription company. Its back office lives in [inesdi-2026-peluda-admin](https://github.com/manuartero/inesdi-2026-peluda-admin).
