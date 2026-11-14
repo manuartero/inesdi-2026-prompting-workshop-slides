@@ -30,7 +30,7 @@ Un ticket, tres prompts
 </div>
 </div>
 
-<div class="ine-todo mt-6">TODO: enlace al CMS (cuando esté desplegado en Vercel)</div>
+<p class="text-center text-lg font-semibold mt-6"><a href="https://inesdi-2026-peluda-admin.vercel.app/" class="inline-flex items-center gap-2 !border-none"><ph-link-bold /> inesdi-2026-peluda-admin.vercel.app</a></p>
 
 <!-- La fecha del mensaje y el ID del ticket cambian con el día: el CMS mueve todo a hoy. Buscad el asunto, no el ID. -->
 

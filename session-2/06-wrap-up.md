@@ -44,4 +44,6 @@ La IA no reduce el trabajo, lo intensifica: más velocidad → más alcance → 
 - Los **datos de Peluda** y el CMS, para practicar cuando quieras.
 - Recursos para seguir.
 
-<div class="ine-todo mt-6">TODO: enlaces (chuleta, CMS, recursos)</div>
+<p class="mt-6">CMS de Peluda: <b><a href="https://inesdi-2026-peluda-admin.vercel.app/" class="inline-flex items-center gap-2 !border-none"><ph-link-bold /> inesdi-2026-peluda-admin.vercel.app</a></b></p>
+
+<div class="ine-todo mt-4">TODO: enlaces (chuleta, recursos)</div>
