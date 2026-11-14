@@ -123,7 +123,50 @@ España, México, Colombia, Perú y Argentina. 17.564 suscriptores.
 - **Contratos:** nadie los relee y se renuevan solos.
 - **Reseñas:** ~320 al mes, solo se contesta el 30 %. 224 esperan respuesta.
 
-<!-- Empresa ficticia. Enseñar el CMS «Peluda Admin» un momento. -->
+<!-- Empresa ficticia. Siguiente slide: su sistema, y un tour corto por el CMS. -->
+
+---
+minutes: 0–10
+---
+
+# Su sistema: Peluda Admin
+
+<div class="grid grid-cols-3 gap-x-4 gap-y-3 mt-1">
+<figure>
+  <img src="/captures/cms-inicio.png" class="border border-gray-300" alt="Inicio del CMS: 451 tickets sin clasificar y 224 reseñas sin responder" />
+  <figcaption class="text-xs mt-1">Inicio: lo pendiente hoy y las cifras</figcaption>
+</figure>
+<figure>
+  <img src="/captures/cms-tickets.png" class="border border-gray-300" alt="Bandeja de tickets, filtrable por día y país" />
+  <figcaption class="text-xs mt-1">Tickets: la bandeja, por día y país</figcaption>
+</figure>
+<figure>
+  <img src="/captures/cms-ticket.png" class="border border-gray-300" alt="Detalle de un ticket con el cliente, sus mascotas y sus pedidos" />
+  <figcaption class="text-xs mt-1">Un ticket, con su cliente y sus pedidos</figcaption>
+</figure>
+<figure>
+  <img src="/captures/cms-clientes.png" class="border border-gray-300" alt="Lista de clientes con buscador" />
+  <figcaption class="text-xs mt-1">Clientes: 625, con mascotas y suscripción</figcaption>
+</figure>
+<figure>
+  <img src="/captures/cms-contratos.png" class="border border-gray-300" alt="Proveedores y contratos con su vencimiento" />
+  <figcaption class="text-xs mt-1">Proveedores y contratos</figcaption>
+</figure>
+<figure>
+  <img src="/captures/cms-resenas.png" class="border border-gray-300" alt="Reseñas sin responder" />
+  <figcaption class="text-xs mt-1">Reseñas: web, app y Google</figcaption>
+</figure>
+</div>
+
+<!--
+Tour de 2 minutos en el CMS en directo (no en la slide):
+1. Inicio: 451 tickets sin clasificar y 224 reseñas sin responder. «Este es el lunes de este equipo».
+2. Tickets → filtro Hoy: 151 tickets. Botón «Exportar CSV»: así sacaremos los datos para la IA.
+3. Abrir un ticket (por ejemplo, el 0009 «Me habéis cobrado dos veces»): cliente, mascotas, pedidos. «Copiar para el prompt».
+4. Proveedores: NutriCan «vence pronto» (spoiler del caso 2).
+5. Reseñas: 224 sin responder (caso 3, sesión 2).
+Todo es inventado; lo pueden abrir después para practicar.
+-->
 
 ---
 layout: section
