@@ -53,9 +53,9 @@ minutes: 0–10
 ## Prompt de una línea
 
 ```text
-Clasifica estos tickets.
+📎 peluda-tickets-hoy.csv
 
-[los 30 tickets]
+Clasifica estos tickets.
 ```
 
 <div class="ine-todo mt-4">TODO: captura s1-dos-prompts-a.png (plan B si falla la demo)</div>
@@ -71,13 +71,13 @@ Clasifica estos tickets.
 <formato> Tabla: ID | Categoría | Urgencia… </formato>
 <restricciones> No inventes. Si dudas: «Revisar» </restricciones>
 <ejemplo> Una fila resuelta </ejemplo>
-<tickets> … los 30 tickets … </tickets>
+<material> 📎 la bandeja de hoy, en CSV </material>
 ```
 
 <div class="ine-todo mt-4">TODO: captura s1-dos-prompts-b.png (plan B si falla la demo)</div>
 
 <!--
-Mismos 30 tickets en los dos casos. Que vean el formato inconsistente frente a la tabla.
+Los dos con el mismo CSV: la bandeja de hoy exportada del CMS (Tickets → Hoy → Exportar CSV, 151 tickets). Que vean el formato inconsistente frente a la tabla. Prompts en demos/sesion-1/01-dos-prompts.md.
 No explicar nada todavía.
 -->
 
@@ -301,18 +301,18 @@ minutes: 25–50
 <rol>Eres responsable de atención al cliente de Peluda.</rol>
 <contexto>Comida para perros y gatos por suscripción en 5 países.
 Unos 150 tickets al día; primera respuesta en 26 h (objetivo: 4 h).
-Desde el 1 de octubre, receta nueva de pienso para perro en España.</contexto>
+Hace unas semanas cambiamos la receta del pienso de perro.</contexto>
 <tarea>Clasifica cada ticket por categoría y urgencia y resúmelo.</tarea>
-<formato>Tabla: ID | Categoría | Urgencia | Resumen | Por qué.
+<formato>Las 15 más urgentes: ID | Categoría | Urgencia | Resumen.
 Categorías, solo estas: Envío · Facturación · Cambio de plan · …
-Alta: salud, sin comida, cobro indebido. Ordena por urgencia.</formato>
+Si varios tickets hablan del mismo problema, dilo al final.</formato>
 <restricciones>No inventes nada que no esté en el ticket.
 Si no puedes decidir, escribe «Revisar».</restricciones>
 <ejemplo>| TCK-EJEMPLO | Salud de la mascota | Alta | … |</ejemplo>
-<tickets>[pega aquí los tickets]</tickets>
+<material>📎 La bandeja de hoy, exportada del sistema (CSV).</material>
 ```
 
-<!-- Un clic por pieza: rol, contexto, tarea, formato, restricciones, ejemplo y, al final, el material. El prompt completo está en demos/sesion-1/01-dos-prompts.md. -->
+<!-- Un clic por pieza: rol, contexto, tarea, formato, restricciones, ejemplo y, al final, el material. El material va adjunto, no pegado: así se trabaja de verdad. El prompt completo está en demos/sesion-1/01-dos-prompts.md. -->
 
 ---
 minutes: 25–50
@@ -453,7 +453,7 @@ minutes: 50–70
 
 ## Sin instrucciones
 
-«¿Qué dice el contrato de VetAmiga sobre la confidencialidad de los datos?» → el modelo **se la inventa**.
+📎 contrato de VetAmiga + «¿Qué dice sobre la confidencialidad de los datos?» → el modelo **se la inventa**.
 
 <div class="ine-todo mt-4">TODO: captura s1-alucinacion-a.png</div>
 
@@ -495,7 +495,7 @@ minutes: 70–85
 
 > Pista: hay un perro que vomita desde que cambió al pienso nuevo. ¿Lo encuentra tu prompt?
 
-<div class="ine-todo mt-4">TODO: enlace al CMS y a los tickets para copiar. Pega tu resultado en el chat.</div>
+<div class="ine-todo mt-4">TODO: enlace al CMS. Tickets → Hoy → Exportar CSV, adjúntalo y pega tu prompt.</div>
 
 ---
 layout: section
