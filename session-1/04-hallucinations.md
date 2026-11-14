@@ -45,30 +45,43 @@ Por qué pasan y cómo reducirlas
 
 # Demo: el detalle que no existe
 
-<div class="ine-cols">
+<div class="grid grid-cols-2 gap-8">
 <div>
 
-## La pregunta
+## A · Solo la pregunta
 
-📎 contrato de VetAmiga + «¿Qué dice sobre la confidencialidad de los datos de nuestros clientes y sus mascotas?» → acierta en lo grande: **no consta**. Pero cita mal la **10.2**.
+<div class="relative inline-block mt-1">
+  <img src="/captures/s1-alucinacion-a.png" style="height: 260px" class="border border-gray-300" alt="Respuesta A: acierta, pero cita mal la cláusula 10.2" />
+  <span class="ine-hl" style="left: 60%; top: 87.6%; width: 27.6%; height: 2.6%" />
+  <span class="ine-hl" style="left: 7.6%; top: 90.1%; width: 35.4%; height: 2.6%" />
+</div>
 
-<div class="ine-todo mt-4">TODO: captura s1-alucinacion-a.png (con la línea de la 10.2 resaltada)</div>
+<p class="mt-2" style="font-size: 0.8rem; line-height: 1.4">Acierta en lo grande: <b>no consta</b>. Pero «la 10.2 exige que cualquier cambio sea por escrito»: la 10.2 habla de <b>renovar</b> el acuerdo.</p>
 
 </div>
 <div>
 
-## La cita literal
+## B · + «Cita literalmente cada cláusula»
 
-«Cita literalmente cada cláusula que mencionas.» → la 10.2 habla de **renovar** el acuerdo, no de cualquier cambio.
+<img src="/captures/s1-alucinacion-b.png" style="height: 260px" class="border border-gray-300 mt-1" alt="Respuesta B: las cláusulas citadas al pie de la letra" />
 
-<div class="ine-todo mt-4">TODO: captura s1-alucinacion-b.png</div>
+<p class="mt-2" style="font-size: 0.8rem; line-height: 1.4">Mismo veredicto, y cada cláusula, <b>al pie de la letra</b>: se puede comprobar en un minuto. Ya no aparece la 10.2.</p>
 
 </div>
 </div>
+
+<style>
+.ine-hl {
+  position: absolute;
+  background: rgba(255, 192, 0, 0.3);
+  border-bottom: 2px solid var(--ine-yellow);
+}
+</style>
 
 <!--
-Antes de señalarlo, pregunta a la clase: «¿Veis algo raro?». Casi todo es verdad (6.1, 6.2, 6.3, las clínicas de México, la fecha del 28/02/2027).
+A: antes de señalarlo, pregunta a la clase: «¿Veis algo raro?». Casi todo es verdad (6.1, 6.2, 6.3, las clínicas de México, la fecha del 28/02/2027).
 El fallo: «la cláusula 10.2 exige que cualquier cambio sea expreso y por escrito». La 10.2 dice: «Las Partes podrán renovarlo por acuerdo expreso y por escrito».
-Mensaje: los modelos buenos ya no se inventan la cláusula entera; se inventan el detalle, dentro de una respuesta correcta en un 95 %. Remedio de la slide anterior: pide la cita literal.
+B (chat nuevo, misma pregunta + «Cita literalmente cada cláusula que mencionas.»): las cuatro citas (6.1, 6.2, 6.3, 4.1) son literales, comprobadas contra el contrato, y desaparece la 10.2.
+Mensaje: los modelos buenos ya no se inventan la cláusula entera; se inventan el detalle, dentro de una respuesta correcta en un 95 %. Pedir la cita literal lo ata al texto y lo hace comprobable.
 Prompts en demos/sesion-1/02-alucinacion.md.
 -->
