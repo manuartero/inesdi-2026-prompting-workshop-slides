@@ -334,13 +334,24 @@ Por eso una conversación el doble de larga es mucho más del doble de trabajo.
 
 ---
 
-# Cada chat empieza de cero
+# El modelo no recuerda: la aplicación toma notas
 
 <div class="flex flex-col gap-2 mt-2">
-  <TopicRow title="Sin memoria">cada conversación nueva empieza de cero: no sabe nada de la anterior</TopicRow>
-  <TopicRow title="Congelado en el tiempo">no sabe nada de lo que pasó después de su entrenamiento</TopicRow>
-  <TopicRow title="La conversación es su memoria de trabajo">lo que hay en el chat es todo lo que tiene</TopicRow>
+  <TopicRow title="El modelo">no guarda nada entre chats: solo ve lo que le llega en cada conversación</TopicRow>
+  <TopicRow title="La conversación">su memoria de trabajo: lo que hay en el chat y lo que adjuntas</TopicRow>
+  <TopicRow title="El proyecto">instrucciones y ficheros que la aplicación añade a cada chat del proyecto</TopicRow>
+  <TopicRow title="Tú">la aplicación va tomando notas de ti entre chats: a qué te dedicas, cómo te gusta que responda</TopicRow>
+  <TopicRow title="Congelado en el tiempo" tone="warning">sabe lo que había hasta su entrenamiento; lo de después, solo si lo busca en la web o se lo das</TopicRow>
 </div>
+
+<p class="text-sm mt-4">Claude y ChatGPT son el modelo más un programa alrededor que gestiona esa memoria. Lo que recuerda son notas que decide guardar, no todo.</p>
+
+<!--
+Antes se decía «cada chat empieza de cero». Hoy el modelo sigue sin memoria, pero la aplicación (el «harness») la simula por capas: conversación, proyecto y memoria del usuario.
+- Proyectos: Claude Projects, ChatGPT Projects. Se ve en la sesión 2 («Del prompt al flujo»).
+- Memoria del usuario: se puede ver y borrar en los ajustes de cada app. Que lo comprueben: a veces guarda cosas que no queríais.
+- Moraleja práctica: lo importante para la tarea, ponlo tú en el chat o en el proyecto; no cuentes con que «ya lo sabe».
+-->
 
 ---
 
@@ -349,7 +360,7 @@ Por eso una conversación el doble de larga es mucho más del doble de trabajo.
 <div class="flex flex-col gap-2 mt-2">
   <TopicRow title="Memoria borrosa">es un JPEG borroso de internet</TopicRow>
   <TopicRow title="Atención limitada">las conversaciones largas se degradan</TopicRow>
-  <TopicRow title="Sin memoria">cada chat empieza de cero</TopicRow>
+  <TopicRow title="Memoria por capas">recuerda notas, no todo</TopicRow>
   <TopicRow title="Fecha de corte">congelado en el tiempo</TopicRow>
 </div>
 
