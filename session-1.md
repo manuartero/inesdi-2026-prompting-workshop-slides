@@ -11,7 +11,7 @@ fonts:
 transition: fade
 layout: cover
 session: Sesión 1 · Prompts estructurados · martes 24/11/2026
-teacher: Manuel Artero
+teacher: Manuel Artero Anguita
 ---
 
 # Prompt engineering estratégico
@@ -22,7 +22,7 @@ Máster de FP en Inteligencia Artificial Aplicada a la Empresa
 
 # Sobre mí
 
-<div class="text-2xl font-semibold leading-tight mt-2">Manu Artero Anguita</div>
+<div class="text-2xl font-semibold leading-tight mt-2">Manuel Artero Anguita</div>
 <div class="text-base mt-1">Principal Engineer en la Plataforma Global de Vídeo de Telefónica</div>
 
 <div class="grid grid-cols-[auto_6.5rem_1fr] gap-x-4 gap-y-3 items-center mt-6 text-base">
@@ -32,10 +32,10 @@ Máster de FP en Inteligencia Artificial Aplicada a la Empresa
   <span class="inline-flex items-center justify-center w-10 h-10 rounded-full" style="background: var(--ine-yellow)"><ph-graduation-cap-fill class="text-xl" /></span><b>Formación</b><span>Informática, Universidad Complutense de Madrid</span>
 </div>
 
-<div class="flex gap-8 mt-8 text-sm items-center whitespace-nowrap">
-  <a href="https://www.linkedin.com/in/manu-artero/" class="flex items-center gap-2"><ph-linkedin-logo-fill class="text-3xl" style="color: #0a66c2" /> manu-artero</a>
-  <a href="https://github.com/manuartero" class="flex items-center gap-2"><ph-github-logo-fill class="text-3xl" style="color: #8250df" /> manuartero</a>
-  <a href="https://dev.to/manuartero" class="flex items-center gap-2"><ph-dev-to-logo-fill class="text-3xl" style="color: #0a0a0a" /> manuartero</a>
+<div class="absolute inset-x-0 bottom-12 flex justify-center gap-10 text-sm items-center whitespace-nowrap" style="color: var(--ine-muted)">
+  <a href="https://www.linkedin.com/in/manu-artero/" class="flex items-center gap-2 !border-none"><ph-linkedin-logo-fill class="text-2xl" style="color: var(--ine-ink)" /> manu-artero</a>
+  <a href="https://github.com/manuartero" class="flex items-center gap-2 !border-none"><ph-github-logo-fill class="text-2xl" style="color: var(--ine-ink)" /> manuartero</a>
+  <a href="https://dev.to/manuartero" class="flex items-center gap-2 !border-none"><ph-dev-to-logo-fill class="text-2xl" style="color: var(--ine-ink)" /> manuartero</a>
 </div>
 
 <!--

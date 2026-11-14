@@ -11,7 +11,7 @@ fonts:
 transition: fade
 layout: cover
 session: Sesión 2 · Flujos de trabajo · martes 01/12/2026
-teacher: Manuel Artero
+teacher: Manuel Artero Anguita
 ---
 
 # Prompt engineering estratégico

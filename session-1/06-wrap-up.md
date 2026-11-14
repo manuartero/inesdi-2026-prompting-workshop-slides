@@ -6,14 +6,6 @@ number: '06'
 # Cierre
 
 ---
-layout: statement
----
-
-Antes de cada tarea, una pregunta:
-
-# ¿Puede la IA **hacer esto por mí**, o hacerlo más rápido?
-
----
 
 # Para llevarte
 
