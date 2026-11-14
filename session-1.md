@@ -58,7 +58,7 @@ minutes: 0–10
 Clasifica estos tickets.
 ```
 
-<div class="ine-todo mt-4">TODO: captura s1-dos-prompts-a.png (plan B si falla la demo)</div>
+<img src="/captures/s1-dos-prompts-a.png" class="mt-3 max-h-[36vh] border border-gray-300" alt="Resultado del prompt de una línea: un esquema de prioridades y categorías inventado por el modelo" />
 
 ::right::
 
@@ -77,6 +77,7 @@ Clasifica estos tickets.
 <div class="ine-todo mt-4">TODO: captura s1-dos-prompts-b.png (plan B si falla la demo)</div>
 
 <!--
+Prompt A (probado el 14/11 con Opus 5.5, 151 tickets): lo hace bien, pero con SU esquema. Avisa: «No tenías un esquema propio, así que he usado este». 4 prioridades (Urgente/Alta/Normal/Baja) y ~25 categorías inventadas (Retención, Nutrición, Datos RGPD…): mañana serán otras, no se pueden contar ni comparar. Y cae en la trampa del 0009: lo junta con el 0033 como «fallo en una tanda de cobros», cuando Lucía tiene dos suscripciones.
 Los dos con el mismo CSV: la bandeja de hoy exportada del CMS (Tickets → Hoy → Exportar CSV, 151 tickets). Que vean el formato inconsistente frente a la tabla. Prompts en demos/sesion-1/01-dos-prompts.md.
 No explicar nada todavía.
 -->
