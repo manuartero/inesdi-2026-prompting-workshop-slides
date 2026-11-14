@@ -74,12 +74,41 @@ Clasifica estos tickets.
 <material> 📎 la bandeja de hoy, en CSV </material>
 ```
 
-<div class="ine-todo mt-4">TODO: captura s1-dos-prompts-b.png (plan B si falla la demo)</div>
+<img src="/captures/s1-dos-prompts-b-urgentes.png" class="mt-3 w-full border border-gray-300" style="height: 190px; object-fit: cover; object-position: top" alt="Resultado del prompt estructurado: tabla de los 15 tickets más urgentes" />
 
 <!--
 Prompt A (probado el 14/11 con Opus 5.5, 151 tickets): lo hace bien, pero con SU esquema. Avisa: «No tenías un esquema propio, así que he usado este». 4 prioridades (Urgente/Alta/Normal/Baja) y ~25 categorías inventadas (Retención, Nutrición, Datos RGPD…): mañana serán otras, no se pueden contar ni comparar. Y cae en la trampa del 0009: lo junta con el 0033 como «fallo en una tanda de cobros», cuando Lucía tiene dos suscripciones.
 Los dos con el mismo CSV: la bandeja de hoy exportada del CMS (Tickets → Hoy → Exportar CSV, 151 tickets). Que vean el formato inconsistente frente a la tabla. Prompts en demos/sesion-1/01-dos-prompts.md.
 No explicar nada todavía.
+-->
+
+---
+minutes: 0–10
+---
+
+# Con estructura, el resultado se puede usar
+
+<div class="grid grid-cols-3 gap-5 mt-1">
+<figure>
+  <img src="/captures/s1-dos-prompts-b-urgentes.png" class="w-full border border-gray-300" style="height: 270px; object-fit: cover; object-position: top" alt="Los 15 tickets más urgentes" />
+  <figcaption class="text-sm mt-2"><b>1 · Los 15 urgentes.</b> Arriba, el perro que vomita: une el 0004 y el 0145.</figcaption>
+</figure>
+<figure>
+  <img src="/captures/s1-dos-prompts-b-recuento.png" class="w-full border border-gray-300" style="height: 270px; object-fit: cover; object-position: bottom" alt="Recuento por categoría y urgencia" />
+  <figcaption class="text-sm mt-2"><b>2 · El recuento.</b> Nuestras 7 categorías, suman 151. Mañana se puede comparar.</figcaption>
+</figure>
+<figure>
+  <img src="/captures/s1-dos-prompts-b-patrones.png" class="w-full border border-gray-300" style="height: 270px; object-fit: contain; background: #262624" alt="Criterios decididos por el modelo y problemas repetidos" />
+  <figcaption class="text-sm mt-2"><b>3 · Lo que se repite.</b> La receta nueva. Y te dice qué criterios tuvo que decidir él.</figcaption>
+</figure>
+</div>
+
+<!--
+Prompt B probado el 14/11 con Opus 5.5 sobre los 151 tickets de hoy.
+- Los 15 urgentes: 0145 (+0004, la misma clienta), 0063 (la clínica VetAmiga), 0123, 0015… El hilo de la receta sale arriba.
+- Recuento con NUESTRAS 7 categorías y 3 urgencias: 20 alta, 47 media, 84 baja. Con el prompt A eran ~25 categorías inventadas.
+- «Criterios que he tenido que decidir yo»: qué cuenta como amenaza, dudas de alimentación sin síntomas… Son los huecos de nuestro prompt: la siguiente iteración los cierra.
+- Sigue marcando el 0009 (Lucía) como «probable cobro indebido»: con el ticket solo no puede saber que tiene dos suscripciones. Le faltan datos, no instrucciones → «Copiar para el prompt» del CMS añade los pedidos.
 -->
 
 ---
