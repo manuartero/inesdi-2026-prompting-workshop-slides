@@ -43,27 +43,32 @@ Por qué pasan y cómo reducirlas
 
 ---
 
-# Demo: la cláusula que no existe
+# Demo: el detalle que no existe
 
 <div class="ine-cols">
 <div>
 
-## Sin instrucciones
+## La pregunta
 
-📎 contrato de VetAmiga + «¿Qué dice sobre la confidencialidad de los datos?» → el modelo **se la inventa**.
+📎 contrato de VetAmiga + «¿Qué dice sobre la confidencialidad de los datos de nuestros clientes y sus mascotas?» → acierta en lo grande: **no consta**. Pero cita mal la **10.2**.
 
-<div class="ine-todo mt-4">TODO: captura s1-alucinacion-a.png</div>
+<div class="ine-todo mt-4">TODO: captura s1-alucinacion-a.png (con la línea de la 10.2 resaltada)</div>
 
 </div>
 <div>
 
-## Con instrucciones
+## La cita literal
 
-«Responde solo con el contrato y cita la cláusula. Si no lo regula, di *no consta*.» → **no consta**.
+«Cita literalmente cada cláusula que mencionas.» → la 10.2 habla de **renovar** el acuerdo, no de cualquier cambio.
 
 <div class="ine-todo mt-4">TODO: captura s1-alucinacion-b.png</div>
 
 </div>
 </div>
 
-<!-- Contrato de Red VetAmiga: no tiene cláusula de confidencialidad ni de protección de datos. Prompts en demos/sesion-1/02-alucinacion.md. -->
+<!--
+Antes de señalarlo, pregunta a la clase: «¿Veis algo raro?». Casi todo es verdad (6.1, 6.2, 6.3, las clínicas de México, la fecha del 28/02/2027).
+El fallo: «la cláusula 10.2 exige que cualquier cambio sea expreso y por escrito». La 10.2 dice: «Las Partes podrán renovarlo por acuerdo expreso y por escrito».
+Mensaje: los modelos buenos ya no se inventan la cláusula entera; se inventan el detalle, dentro de una respuesta correcta en un 95 %. Remedio de la slide anterior: pide la cita literal.
+Prompts en demos/sesion-1/02-alucinacion.md.
+-->
