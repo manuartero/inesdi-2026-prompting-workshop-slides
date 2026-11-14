@@ -30,7 +30,7 @@ clicks: 6
 
 <PromptPieces :active="$clicks" />
 
-<!-- Es el prompt B que lanzamos en la demo inicial. Un clic por pieza: adjunto, rol, contexto, goal, formato y restricciones. El prompt completo está en demos/sesion-1/01-dos-prompts.md. -->
+<!-- Es el prompt B que lanzamos en la demo inicial. Un clic por pieza: adjunto, rol, contexto, goal, formato y restricciones; a la derecha el prompt se desplaza hasta esa pieza y la resalta. El texto sale de demos/sesion-1/01-dos-prompts.md (si cambias el prompt, actualiza components/PromptPieces.vue). -->
 
 ---
 
