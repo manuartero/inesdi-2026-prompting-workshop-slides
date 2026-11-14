@@ -161,9 +161,11 @@ Prompt B probado el 14/11 con Opus 5.5 sobre los 151 tickets de hoy.
 layout: statement
 ---
 
-# Un prompt es un encargo a un **becario brillante** que no sabe nada de tu empresa.
+# Tiene potencia de sobra.<br>**El rumbo lo pones tú.**
 
-Todo lo que no le cuentes, se lo inventa.
+Puede hacer mucho más que tu trabajo. Si no la guías, hará mucho… pero no lo que necesitas.
+
+<!-- Enlaza con la demo: el prompt A hizo muchísimo (151 tickets, un patrón, 25 categorías) y aun así no era lo que queríamos. -->
 
 ---
 
@@ -345,7 +347,7 @@ Por eso una conversación el doble de larga es mucho más del doble de trabajo.
 # Cada chat empieza de cero
 
 <div class="flex flex-col gap-2 mt-2">
-  <TopicRow title="Sin memoria">cada conversación nueva es un becario nuevo, el primer día</TopicRow>
+  <TopicRow title="Sin memoria">cada conversación nueva empieza de cero: no sabe nada de la anterior</TopicRow>
   <TopicRow title="Congelado en el tiempo">no sabe nada de lo que pasó después de su entrenamiento</TopicRow>
   <TopicRow title="La conversación es su memoria de trabajo">lo que hay en el chat es todo lo que tiene</TopicRow>
 </div>
@@ -384,7 +386,7 @@ Rol · Contexto · Tarea · Formato · Restricciones · Ejemplos
 
 <div class="grid grid-cols-3 gap-4 mt-2">
 <div class="ine-card ine-card--accent"><h3>Rol</h3>Quién es al hacer el trabajo.</div>
-<div class="ine-card ine-card--accent"><h3>Contexto</h3>Lo que sabría un empleado y el becario no.</div>
+<div class="ine-card ine-card--accent"><h3>Contexto</h3>Lo que sabe alguien de tu empresa y el modelo no.</div>
 <div class="ine-card ine-card--accent"><h3>Tarea</h3>Qué tiene que hacer, con un verbo claro.</div>
 <div class="ine-card"><h3>Formato</h3>Tabla, lista, columnas, longitud.</div>
 <div class="ine-card"><h3>Restricciones</h3>Qué no debe hacer.</div>

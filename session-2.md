@@ -42,7 +42,7 @@ number: '01'
 
 # Lo que vimos el martes pasado
 
-- Un prompt es un encargo a un **becario brillante** que no sabe nada de tu empresa.
+- Tiene potencia de sobra: **el rumbo lo pones tú**.
 - **Rol · Contexto · Tarea · Formato · Restricciones · Ejemplos.**
 - Contra las alucinaciones: la fuente, «no consta», la cita literal.
 
