@@ -54,21 +54,27 @@ minutes: 0–10
 
 ```text
 Clasifica estos tickets.
+
+[los 30 tickets]
 ```
 
-<div class="ine-todo mt-4">TODO: captura del resultado (plan B si falla la demo)</div>
+<div class="ine-todo mt-4">TODO: captura s1-dos-prompts-a.png (plan B si falla la demo)</div>
 
 ::right::
 
 ## Prompt estructurado
 
 ```text
-Eres responsable de atención al cliente de Peluda…
-Contexto: …  Tarea: …  Formato: tabla …
-Restricciones: …  Ejemplos: …
+<rol> Responsable de atención al cliente </rol>
+<contexto> Peluda, planes, 26 h de respuesta… </contexto>
+<tarea> Clasifica, prioriza y resume </tarea>
+<formato> Tabla: ID | Categoría | Urgencia… </formato>
+<restricciones> No inventes. Si dudas: «Revisar» </restricciones>
+<ejemplo> Una fila resuelta </ejemplo>
+<tickets> … los 30 tickets … </tickets>
 ```
 
-<div class="ine-todo mt-4">TODO: captura del resultado (plan B si falla la demo)</div>
+<div class="ine-todo mt-4">TODO: captura s1-dos-prompts-b.png (plan B si falla la demo)</div>
 
 <!--
 Mismos 30 tickets en los dos casos. Que vean el formato inconsistente frente a la tabla.
@@ -99,7 +105,7 @@ Comida para perros y gatos **por suscripción**. Cada 4 semanas, en casa.
 
 ### Dónde
 
-España, México, Colombia, Perú y Argentina. ~18.000 suscriptores.
+España, México, Colombia, Perú y Argentina. 17.564 suscriptores.
 
 </div>
 <div class="ine-card">
@@ -113,9 +119,9 @@ España, México, Colombia, Perú y Argentina. ~18.000 suscriptores.
 
 ## Sus tres problemas son nuestros tres casos
 
-- **Tickets:** ~150 al día, primera respuesta en 26 h (objetivo: 4 h).
+- **Tickets:** ~150 al día y 451 sin clasificar ahora mismo. Primera respuesta en 26 h (objetivo: 4 h).
 - **Contratos:** nadie los relee y se renuevan solos.
-- **Reseñas:** ~400 al mes, solo se contesta el 30 %.
+- **Reseñas:** ~320 al mes, solo se contesta el 30 %. 224 esperan respuesta.
 
 <!-- Empresa ficticia. Enseñar el CMS «Peluda Admin» un momento. -->
 
@@ -283,7 +289,30 @@ minutes: 25–50
 <div class="ine-card"><h3>Ejemplos</h3>Uno o dos casos resueltos.</div>
 </div>
 
-<div class="ine-todo mt-6">TODO: el prompt de tickets, con cada pieza resaltada</div>
+<!-- La siguiente slide recorre las seis piezas sobre el prompt B de la demo inicial. -->
+
+---
+minutes: 25–50
+---
+
+# Las seis piezas, en el prompt de la demo
+
+```text {1|2-4|5|6-8|9-10|11|12}{maxHeight:'58vh'}
+<rol>Eres responsable de atención al cliente de Peluda.</rol>
+<contexto>Comida para perros y gatos por suscripción en 5 países.
+Unos 150 tickets al día; primera respuesta en 26 h (objetivo: 4 h).
+Desde el 1 de octubre, receta nueva de pienso para perro en España.</contexto>
+<tarea>Clasifica cada ticket por categoría y urgencia y resúmelo.</tarea>
+<formato>Tabla: ID | Categoría | Urgencia | Resumen | Por qué.
+Categorías, solo estas: Envío · Facturación · Cambio de plan · …
+Alta: salud, sin comida, cobro indebido. Ordena por urgencia.</formato>
+<restricciones>No inventes nada que no esté en el ticket.
+Si no puedes decidir, escribe «Revisar».</restricciones>
+<ejemplo>| TCK-EJEMPLO | Salud de la mascota | Alta | … |</ejemplo>
+<tickets>[pega aquí los tickets]</tickets>
+```
+
+<!-- Un clic por pieza: rol, contexto, tarea, formato, restricciones, ejemplo y, al final, el material. El prompt completo está en demos/sesion-1/01-dos-prompts.md. -->
 
 ---
 minutes: 25–50
@@ -424,23 +453,23 @@ minutes: 50–70
 
 ## Sin instrucciones
 
-«¿Cuál es la penalización por retraso?» → el modelo **se la inventa**.
+«¿Qué dice el contrato de VetAmiga sobre la confidencialidad de los datos?» → el modelo **se la inventa**.
 
-<div class="ine-todo mt-4">TODO: captura</div>
+<div class="ine-todo mt-4">TODO: captura s1-alucinacion-a.png</div>
 
 </div>
 <div>
 
 ## Con instrucciones
 
-«Responde solo con el contrato. Si no aparece, di *no consta* y cita la cláusula.» → **no consta**.
+«Responde solo con el contrato y cita la cláusula. Si no lo regula, di *no consta*.» → **no consta**.
 
-<div class="ine-todo mt-4">TODO: captura</div>
+<div class="ine-todo mt-4">TODO: captura s1-alucinacion-b.png</div>
 
 </div>
 </div>
 
-<!-- Contrato de Rutas Levante o NutriCan: el que tenga la cláusula que falta. -->
+<!-- Contrato de Red VetAmiga: no tiene cláusula de confidencialidad ni de protección de datos. Prompts en demos/sesion-1/02-alucinacion.md. -->
 
 ---
 layout: section
