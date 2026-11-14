@@ -259,3 +259,43 @@
   padding: 0 0.15em;
 }
 
+
+/* Hard-flat tile with an icon chip, an example and a remedy line. */
+.ine-tile {
+  background: white;
+  border: 1.5px solid var(--ine-line);
+  padding: 1rem 1.1rem;
+  font-size: 0.85rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.ine-tile__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 9999px;
+  background: var(--ine-yellow);
+  font-size: 1.3rem;
+}
+.ine-tile h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0;
+}
+.ine-tile p {
+  margin: 0;
+  line-height: 1.4;
+}
+.ine-tile__example {
+  color: var(--ine-muted);
+  font-style: italic;
+  font-size: 0.78rem;
+}
+.ine-tile__remedy {
+  margin-top: auto !important;
+  border-left: 3px solid var(--ine-yellow);
+  padding-left: 0.6rem;
+}

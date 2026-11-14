@@ -60,35 +60,86 @@ Los nombres de las etiquetas los eliges tú: no hay una lista oficial. Lo que im
 -->
 
 ---
+clicks: 3
+---
 
 # Cómo escribo yo los prompts: como Íñigo Montoya
 
-<div class="grid grid-cols-[1fr_1.8fr] gap-6 mt-2">
+<div class="grid grid-cols-[1fr_1.8fr] gap-6 mt-2 items-start">
 <div>
-  <img src="/assets/montoya.png" class="max-h-[20vh] mx-auto" alt="Boceto de Íñigo Montoya" />
-  <p class="text-sm italic leading-snug mt-2">«Hola. Me llamo Íñigo Montoya.<br />Tú mataste a mi padre.<br />Prepárate a morir.»</p>
-  <p class="text-xs">Quién soy · qué pasa · qué espero.</p>
+  <img src="/assets/montoya.png" class="max-h-[16vh] mx-auto" alt="Boceto de Íñigo Montoya" />
+  <div class="montoya mt-3" :class="{ 'montoya--focus': $clicks > 0 }">
+    <p class="montoya__part" :class="{ 'montoya__part--on': $clicks === 1 }"><span class="montoya__num">1</span><span><i>«Hola. Me llamo Íñigo Montoya.</i><br /><small>quién soy</small></span></p>
+    <p class="montoya__part" :class="{ 'montoya__part--on': $clicks === 2 }"><span class="montoya__num">2</span><span><i>Tú mataste a mi padre.</i><br /><small>qué pasa</small></span></p>
+    <p class="montoya__part" :class="{ 'montoya__part--on': $clicks === 3 }"><span class="montoya__num">3</span><span><i>Prepárate a morir.»</i><br /><small>qué espero</small></span></p>
+  </div>
 </div>
-<div>
-
-```text
-<contexto>
+<div class="montoya montoya__prompt" :class="{ 'montoya--focus': $clicks > 0 }">
+<div class="montoya__part" :class="{ 'montoya__part--on': $clicks === 1 }"><span class="montoya__num">1</span><pre>&lt;contexto&gt;
 Soy responsable de atención al cliente de Peluda,
 comida para mascotas por suscripción.
-</contexto>
-
-<problema>
+&lt;/contexto&gt;</pre></div>
+<div class="montoya__part" :class="{ 'montoya__part--on': $clicks === 2 }"><span class="montoya__num">2</span><pre>&lt;problema&gt;
 Este ticket lleva 3 días sin respuesta
 y la clienta está enfadada.
-</problema>
-
-<ticket>
+&lt;/problema&gt;
+<span></span>
+&lt;ticket&gt;
 [pega aquí el ticket]
-</ticket>
-
-Redacta una respuesta de menos de 120 palabras,
-con el tono de nuestra guía de marca.
-```
-
+&lt;/ticket&gt;</pre></div>
+<div class="montoya__part" :class="{ 'montoya__part--on': $clicks === 3 }"><span class="montoya__num">3</span><pre>Redacta una respuesta de menos de 120 palabras,
+con el tono de nuestra guía de marca.</pre></div>
 </div>
 </div>
+
+<style>
+.montoya__part {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  margin: 0 0 0.35rem;
+  padding: 0.3rem 0.5rem;
+  font-size: 0.9rem;
+  line-height: 1.3;
+  transition: opacity 0.3s, background-color 0.3s;
+}
+.montoya small {
+  color: var(--ine-muted);
+  font-size: 0.7rem;
+}
+.montoya__num {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.4rem;
+  height: 1.4rem;
+  border-radius: 9999px;
+  background: var(--ine-yellow);
+  font-size: 0.7rem;
+  font-weight: 600;
+  font-style: normal;
+}
+.montoya__prompt {
+  background: white;
+  border: 1.5px solid var(--ine-line);
+  padding: 0.6rem;
+}
+.montoya__prompt pre {
+  margin: 0;
+  padding: 0 !important;
+  background: none !important;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.68rem;
+  line-height: 1.55;
+}
+.montoya--focus .montoya__part {
+  opacity: 0.3;
+}
+.montoya--focus .montoya__part--on {
+  opacity: 1;
+  background: color-mix(in srgb, var(--ine-yellow) 28%, white);
+}
+</style>
+
+<!-- Clic a clic: cada frase de Íñigo es una parte del prompt. 1 quién soy → contexto; 2 qué pasa → el problema y el ticket; 3 qué espero → la orden final. -->
