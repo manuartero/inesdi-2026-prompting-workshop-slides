@@ -20,6 +20,54 @@ Máster de FP en Inteligencia Artificial Aplicada a la Empresa
 
 ---
 
+# Sobre mí
+
+<div class="grid grid-cols-[1.1fr_1fr] gap-8 -mt-2">
+<div>
+
+<p class="text-xl font-semibold leading-tight">Manu Artero Anguita</p>
+<p class="text-sm mt-1">Ingeniero de software desde 2012, hoy en el área de Vídeo de Telefónica.</p>
+
+<div class="flex flex-col gap-1 mt-3">
+  <TopicRow title="Ahora">agentes, skills y servidores MCP para el equipo de Vídeo</TopicRow>
+  <TopicRow title="Antes">backend y frontend; líder de backend en Doctor24</TopicRow>
+  <TopicRow title="En INESDI">profesor de Frontend Frameworks (React)</TopicRow>
+  <TopicRow title="Formación">Informática, Universidad Complutense</TopicRow>
+</div>
+
+
+
+</div>
+<div>
+<div class="ine-card ine-card--accent">
+
+### Escribía en dev.to
+
+66 artículos. El último que dio que hablar: **About Wizards & Warlocks, Programmers & Vibe Coders**
+
+> «The Patron giveth, and the Patron can taketh away.»
+
+<p class="text-sm">El mago estudia para tener su magia; el brujo se la presta un patrón, que puede cambiar las condiciones cuando quiera. Programar con IA se parece mucho a lo segundo.</p>
+
+</div>
+
+<div class="flex gap-4 mt-5 text-xs items-center whitespace-nowrap">
+  <a href="https://www.linkedin.com/in/manu-artero/" class="flex items-center gap-1.5"><ph-linkedin-logo-fill class="text-xl" /> manu-artero</a>
+  <a href="https://github.com/manuartero" class="flex items-center gap-1.5"><ph-github-logo-fill class="text-xl" /> manuartero</a>
+  <a href="https://dev.to/manuartero" class="flex items-center gap-1.5"><ph-dev-to-logo-fill class="text-xl" /> manuartero</a>
+</div>
+</div>
+</div>
+
+<!--
+No es por ego: es para que sepan quién les habla y por qué. Un minuto, como mucho.
+- Trabajo con agentes de IA a diario: es mi trabajo ahora mismo, no algo que he leído.
+- Ya daba clase en INESDI (Frontend Frameworks): esto es lo mismo, pero sin código.
+- El post de los magos y los brujos: dominar la herramienta sin olvidar el oficio. Enlaza con el cierre («¿puede la IA hacer esto por mí?»).
+-->
+
+---
+
 # Hoy, en 90 minutos
 
 | Min   | Bloque                                |
@@ -65,16 +113,18 @@ Clasifica estos tickets.
 ## Prompt estructurado
 
 ```text
-<rol> Responsable de atención al cliente </rol>
-<contexto> Peluda, planes, 26 h de respuesta… </contexto>
-<tarea> Clasifica, prioriza y resume </tarea>
-<formato> Tabla: ID | Categoría | Urgencia… </formato>
-<restricciones> No inventes. Si dudas: «Revisar» </restricciones>
-<ejemplo> Una fila resuelta </ejemplo>
-<material> 📎 la bandeja de hoy, en CSV </material>
+📎 peluda-tickets-hoy.csv
+
+<rol>Responsable de atención al cliente</rol>
+<contexto>Suscripción cada 4 semanas, 3 planes.
+Hace semanas cambiamos la receta de perro.</contexto>
+<goal>Clasifica por categoría y urgencia.</goal>
+<formato>1. Los 15 urgentes 2. Recuento 3. Qué se repite
+Categorías: Envío, Facturación… Urgencia: Alta…</formato>
+<restricciones>Lee todos. No inventes. «Revisar».</restricciones>
 ```
 
-<img src="/captures/s1-dos-prompts-b-urgentes.png" class="mt-3 w-full border border-gray-300" style="height: 190px; object-fit: cover; object-position: top" alt="Resultado del prompt estructurado: tabla de los 15 tickets más urgentes" />
+<img src="/captures/s1-dos-prompts-b-urgentes.png" class="mt-3 w-full border border-gray-300" style="height: 140px; object-fit: cover; object-position: 50% 9%" alt="Resultado del prompt estructurado: tabla de los 15 tickets más urgentes" />
 
 <!--
 Prompt A (probado el 14/11 con Opus 5.5, 151 tickets): lo hace bien, pero con SU esquema. Avisa: «No tenías un esquema propio, así que he usado este». 4 prioridades (Urgente/Alta/Normal/Baja) y ~25 categorías inventadas (Retención, Nutrición, Datos RGPD…): mañana serán otras, no se pueden contar ni comparar. Y cae en la trampa del 0009: lo junta con el 0033 como «fallo en una tanda de cobros», cuando Lucía tiene dos suscripciones.
@@ -393,24 +443,36 @@ minutes: 25–50
 minutes: 25–50
 ---
 
-# Las seis piezas, en el prompt de la demo
+# Las piezas, en el prompt de la demo
 
-```text {1|2-4|5|6-8|9-10|11|12}{maxHeight:'58vh'}
-<rol>Eres responsable de atención al cliente de Peluda.</rol>
-<contexto>Comida para perros y gatos por suscripción en 5 países.
-Unos 150 tickets al día; primera respuesta en 26 h (objetivo: 4 h).
-Hace unas semanas cambiamos la receta del pienso de perro.</contexto>
-<tarea>Clasifica cada ticket por categoría y urgencia y resúmelo.</tarea>
-<formato>Las 15 más urgentes: ID | Categoría | Urgencia | Resumen.
-Categorías, solo estas: Envío · Facturación · Cambio de plan · …
-Si varios tickets hablan del mismo problema, dilo al final.</formato>
-<restricciones>No inventes nada que no esté en el ticket.
-Si no puedes decidir, escribe «Revisar».</restricciones>
-<ejemplo>| TCK-EJEMPLO | Salud de la mascota | Alta | … |</ejemplo>
-<material>📎 La bandeja de hoy, exportada del sistema (CSV).</material>
+```text {1|3|5-8|10|12-19|21-25}{maxHeight:'60vh'}
+📎 peluda-tickets-hoy.csv
+
+<rol>Responsable del equipo de atención al cliente de Peluda</rol>
+
+<contexto>
+Peluda vende comida para mascotas por suscripción: cada 4 semanas enviamos un pedido a casa. Hay tres planes: Básico, Completo y Cuidado.
+Hace unas semanas cambiamos la receta del pienso de perro adulto en España.
+</contexto>
+
+<goal>Clasifica los tickets por categoría y urgencia.</goal>
+
+<formato>
+1. Tabla con los 15 tickets más urgentes: ID | Categoría | Urgencia | Resumen | Por qué urgente.
+2. Tabla con cuántos tickets hay de cada categoría y de cada urgencia.
+3. Si varios tickets hablan del mismo problema, cuáles son y qué tienen en común.
+Categorías: Envío, Facturación, Cambio de plan, Baja, Salud de la mascota, Cuenta, Otro.
+Urgencia Alta: salud de una mascota, mascota sin comida, cobro indebido o amenaza…
+</formato>
+
+<restricciones>
+- Lee todos los tickets del fichero.
+- Si un ticket trata dos asuntos, clasifícalo por el más grave.
+- No inventes nada. Si no puedes decidir, escribe «Revisar».
+</restricciones>
 ```
 
-<!-- Un clic por pieza: rol, contexto, tarea, formato, restricciones, ejemplo y, al final, el material. El material va adjunto, no pegado: así se trabaja de verdad. El prompt completo está en demos/sesion-1/01-dos-prompts.md. -->
+<!-- Es el prompt que lanzamos en la demo inicial. Un clic por pieza: material adjunto, rol, contexto, tarea (goal), formato y restricciones. No lleva ejemplo: el formato ya deja claro qué tabla queremos, así que aquí no hace falta (con una salida menos obvia, sí). El prompt completo está en demos/sesion-1/01-dos-prompts.md. -->
 
 ---
 minutes: 25–50
