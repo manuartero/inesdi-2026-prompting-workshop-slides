@@ -33,19 +33,6 @@ clicks: 6
 <!-- Es el prompt B que lanzamos en la demo inicial. Un clic por pieza: adjunto, rol, contexto, goal, formato y restricciones; a la derecha el prompt se desplaza hasta esa pieza y la resalta. El texto sale de demos/sesion-1/01-dos-prompts.md (si cambias el prompt, actualiza components/PromptPieces.vue). -->
 
 ---
-
-# Las seis piezas
-
-<div class="grid grid-cols-3 gap-4 mt-2">
-<div class="ine-piece"><span class="ine-piece__icon"><span class="i-ph-paperclip-fill" /></span><h3>Adjunto <code>📎</code></h3><p>Los datos de verdad: el fichero, el contrato, los tickets.</p></div>
-<div class="ine-piece"><span class="ine-piece__icon"><span class="i-ph-identification-badge-fill" /></span><h3>Rol <code>&lt;rol&gt;</code></h3><p>Desde qué puesto hace el trabajo.</p></div>
-<div class="ine-piece"><span class="ine-piece__icon"><span class="i-ph-buildings-fill" /></span><h3>Contexto <code>&lt;contexto&gt;</code></h3><p>Lo que sabe alguien de tu empresa y el modelo no.</p></div>
-<div class="ine-piece"><span class="ine-piece__icon"><span class="i-ph-target-fill" /></span><h3>Goal <code>&lt;goal&gt;</code></h3><p>Qué tiene que conseguir, con un verbo claro.</p></div>
-<div class="ine-piece"><span class="ine-piece__icon"><span class="i-ph-table-fill" /></span><h3>Formato <code>&lt;formato&gt;</code></h3><p>Cómo quieres el resultado: tabla, columnas, longitud.</p></div>
-<div class="ine-piece"><span class="ine-piece__icon"><span class="i-ph-prohibit-fill" /></span><h3>Restricciones <code>&lt;restricciones&gt;</code></h3><p>Qué no debe hacer.</p></div>
-</div>
-
----
 clicks: 1
 ---
 

@@ -259,39 +259,3 @@
   padding: 0 0.15em;
 }
 
-/* Card for one prompt piece: hard-flat surface with an icon chip. */
-.ine-piece {
-  background: white;
-  border: 1.5px solid var(--ine-line);
-  padding: 0.9rem 1rem;
-  font-size: 0.8rem;
-}
-.ine-piece__icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 2.4rem;
-  height: 2.4rem;
-  border-radius: 9999px;
-  background: var(--ine-yellow);
-  font-size: 1.3rem;
-  margin-bottom: 0.6rem;
-}
-.ine-piece h3 {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 1.05rem;
-  font-weight: 600;
-  margin: 0 0 0.3rem;
-}
-.ine-piece h3 code {
-  font-size: 0.6rem;
-  font-weight: 400;
-  padding: 0.05rem 0.3rem;
-}
-.ine-piece p {
-  color: var(--ine-muted);
-  line-height: 1.4;
-  margin: 0;
-}
