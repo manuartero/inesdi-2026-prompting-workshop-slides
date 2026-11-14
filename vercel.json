@@ -1,0 +1,15 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "installCommand": "PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD=1 pnpm install",
+  "buildCommand": "pnpm build",
+  "outputDirectory": "dist",
+  "redirects": [
+    { "source": "/", "destination": "/session-1/", "permanent": false },
+    { "source": "/session-1", "destination": "/session-1/", "permanent": false },
+    { "source": "/session-2", "destination": "/session-2/", "permanent": false }
+  ],
+  "rewrites": [
+    { "source": "/session-1/:path*", "destination": "/session-1/index.html" },
+    { "source": "/session-2/:path*", "destination": "/session-2/index.html" }
+  ]
+}
