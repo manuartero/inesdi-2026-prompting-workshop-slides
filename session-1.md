@@ -59,7 +59,6 @@ No es por ego: es para que sepan quién les habla y por qué. Un minuto, como mu
 ---
 layout: section
 number: '01'
-minutes: 0–10 min
 ---
 
 # La misma tarea, 2x prompts diferentes
@@ -68,7 +67,6 @@ Demo en directo antes de explicar nada
 
 ---
 layout: two-cols
-minutes: 0–10
 ---
 
 # ¿Ves la diferencia?
@@ -110,8 +108,6 @@ No explicar nada todavía.
 -->
 
 ---
-minutes: 0–10
----
 
 # El prompt de una línea, revisado contra el sistema
 
@@ -134,8 +130,6 @@ Comprobado contra el CMS (14/11). Lo que SÍ hizo bien, para ser justos: ve el p
 Mensaje: no son mentiras grandes, son conclusiones sin datos. El modelo no sabía nada de Peluda y rellenó los huecos.
 -->
 
----
-minutes: 0–10
 ---
 
 # Con estructura, el resultado se puede usar
@@ -208,8 +202,6 @@ España, México, Colombia, Perú y Argentina. 17.564 suscriptores.
 <!-- Empresa ficticia. Siguiente slide: su sistema, y un tour corto por el CMS. -->
 
 ---
-minutes: 0–10
----
 
 # Su sistema: Peluda Admin
 
@@ -253,15 +245,12 @@ Todo es inventado; lo pueden abrir después para practicar.
 ---
 layout: section
 number: '02'
-minutes: 10–25 min
 ---
 
 # Cómo «piensa» un LLM
 
 Solo lo que explica su comportamiento
 
----
-minutes: 10–25
 ---
 
 # El efecto Magneto
@@ -299,8 +288,6 @@ Imágenes de Marvel: uso ilustrativo en clase.
 -->
 
 ---
-minutes: 10–25
----
 
 # Un JPEG borroso de internet
 
@@ -320,7 +307,6 @@ los huecos borrosos con algo que suena bien.
 -->
 
 ---
-minutes: 10–25
 clicks: 2
 ---
 
@@ -340,8 +326,6 @@ Por eso una conversación el doble de larga es mucho más del doble de trabajo.
 -->
 
 ---
-minutes: 10–25
----
 
 # Las conversaciones largas se degradan
 
@@ -357,8 +341,6 @@ minutes: 10–25
 <p class="text-center mt-4">Que el chat admita más texto no amplía la zona lúcida: solo añade <b>zona torpe</b>.</p>
 
 ---
-minutes: 10–25
----
 
 # Cada chat empieza de cero
 
@@ -368,8 +350,6 @@ minutes: 10–25
   <TopicRow title="La conversación es su memoria de trabajo">lo que hay en el chat es todo lo que tiene</TopicRow>
 </div>
 
----
-minutes: 10–25
 ---
 
 # Cuatro límites, un remedio
@@ -392,15 +372,12 @@ El resto del taller son tácticas para eso.
 ---
 layout: section
 number: '03'
-minutes: 25–50 min
 ---
 
 # Anatomía de un prompt
 
 Rol · Contexto · Tarea · Formato · Restricciones · Ejemplos
 
----
-minutes: 25–50
 ---
 
 # Las seis piezas
@@ -416,8 +393,6 @@ minutes: 25–50
 
 <!-- La siguiente slide recorre las seis piezas sobre el prompt B de la demo inicial. -->
 
----
-minutes: 25–50
 ---
 
 # Las piezas, en el prompt de la demo
@@ -452,8 +427,6 @@ Urgencia Alta: salud de una mascota, mascota sin comida, cobro indebido o amenaz
 <!-- Es el prompt que lanzamos en la demo inicial. Un clic por pieza: material adjunto, rol, contexto, tarea (goal), formato y restricciones. No lleva ejemplo: el formato ya deja claro qué tabla queremos, así que aquí no hace falta (con una salida menos obvia, sí). El prompt completo está en demos/sesion-1/01-dos-prompts.md. -->
 
 ---
-minutes: 25–50
----
 
 # La versión oficial: 10 pasos
 
@@ -464,7 +437,6 @@ minutes: 25–50
 <p class="text-center text-xs mt-2">Guía de Anthropic. CO-STAR, RTF y compañía son variantes de la misma idea: no hace falta memorizarlas.</p>
 
 ---
-minutes: 25–50
 clicks: 1
 ---
 
@@ -483,8 +455,6 @@ clicks: 1
   </div>
 </div>
 
----
-minutes: 25–50
 ---
 
 # Cómo escribo yo los prompts: como Íñigo Montoya
@@ -522,15 +492,12 @@ con el tono de nuestra guía de marca.
 ---
 layout: section
 number: '04'
-minutes: 50–70 min
 ---
 
 # Alucinaciones
 
 Por qué pasan y cómo reducirlas
 
----
-minutes: 50–70
 ---
 
 # Dos tipos de alucinación
@@ -557,8 +524,6 @@ Se aleja de lo que pactasteis al principio de la conversación.
 </div>
 
 ---
-minutes: 50–70
----
 
 # Cómo reducirlas
 
@@ -579,8 +544,6 @@ minutes: 50–70
 </div>
 </div>
 
----
-minutes: 50–70
 ---
 
 # Demo: la cláusula que no existe
@@ -611,15 +574,12 @@ minutes: 50–70
 ---
 layout: section
 number: '05'
-minutes: 70–85 min
 ---
 
 # Práctica guiada · Caso 1 · Tickets
 
 Mejoramos un prompt entre todos en 3 iteraciones
 
----
-minutes: 70–85
 ---
 
 # De categoría, urgencia y resumen
@@ -637,7 +597,6 @@ minutes: 70–85
 ---
 layout: section
 number: '06'
-minutes: 85–90 min
 ---
 
 # Cierre
@@ -650,8 +609,6 @@ Antes de cada tarea, una pregunta:
 
 # ¿Puede la IA **hacer esto por mí**, o hacerlo más rápido?
 
----
-minutes: 85–90
 ---
 
 # Para llevarte

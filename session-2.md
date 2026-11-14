@@ -20,29 +20,24 @@ Máster de FP en Inteligencia Artificial Aplicada a la Empresa
 
 ---
 
-# Hoy, en 90 minutos
+# Esta sesión
 
-| Min   | Bloque                          |
-| ----- | ------------------------------- |
-| 0–15  | Repaso + vuestros casos         |
-| 15–35 | Técnicas avanzadas              |
-| 35–55 | Caso 2 · Contratos              |
-| 55–70 | Caso 3 · Reseñas                |
-| 70–85 | Del prompt al flujo             |
-| 85–90 | Cierre: chuleta final y recursos |
+- Repaso y vuestros casos
+- Técnicas avanzadas
+- Caso 2: contratos
+- Caso 3: reseñas
+- Del prompt al flujo
+- Cierre: chuleta final y recursos
 
 ---
 layout: section
 number: '01'
-minutes: 0–15 min
 ---
 
 # Repaso + vuestros casos
 
 2 o 3 entregas voluntarias
 
----
-minutes: 0–15
 ---
 
 # Lo que vimos el martes pasado
@@ -56,13 +51,10 @@ minutes: 0–15
 ---
 layout: section
 number: '02'
-minutes: 15–35 min
 ---
 
 # Técnicas avanzadas
 
----
-minutes: 15–35
 ---
 
 # Cinco técnicas
@@ -80,15 +72,12 @@ minutes: 15–35
 ---
 layout: section
 number: '03'
-minutes: 35–55 min
 ---
 
 # Caso 2 · Contratos
 
 Documentos largos: extraer y marcar riesgos
 
----
-minutes: 35–55
 ---
 
 # Tres contratos con trampa
@@ -109,15 +98,12 @@ minutes: 35–55
 ---
 layout: section
 number: '04'
-minutes: 55–70 min
 ---
 
 # Caso 3 · Reseñas
 
 La voz de marca, en cada respuesta
 
----
-minutes: 55–70
 ---
 
 # Guía de estilo + ejemplos → respuestas
@@ -149,13 +135,10 @@ minutes: 55–70
 ---
 layout: section
 number: '05'
-minutes: 70–85 min
 ---
 
 # Del prompt al flujo
 
----
-minutes: 70–85
 ---
 
 # Que no tengas que escribirlo cada vez
@@ -184,7 +167,6 @@ minutes: 70–85
 <div class="ine-todo mt-6">TODO: captura de un Proyecto «Atención al cliente de Peluda»</div>
 
 ---
-minutes: 70–85
 clicks: 1
 ---
 
@@ -205,8 +187,6 @@ La IA es una herramienta. **La responsabilidad sigue siendo tuya.**
 <p v-click class="text-center text-lg italic mt-6">«Copiar y pegar sin revisar no es usar bien la IA: <b>es una negligencia</b>.»</p>
 
 ---
-minutes: 70–85
----
 
 # Cinco hábitos
 
@@ -221,13 +201,10 @@ minutes: 70–85
 ---
 layout: section
 number: '06'
-minutes: 85–90 min
 ---
 
 # Cierre
 
----
-minutes: 85–90
 ---
 
 # ¿Me va a sustituir la IA?
@@ -250,8 +227,6 @@ La IA no reduce el trabajo, lo intensifica: más velocidad → más alcance → 
 <!-- TODO: comprobar la fuente del 88 % antes de la sesión. -->
 
 ---
-minutes: 85–90
----
 
 # Es un proceso, no un momento
 
@@ -261,8 +236,6 @@ minutes: 85–90
 
 <p class="text-center text-xs">dev.to/manuartero · <i>Let's talk about grief</i></p>
 
----
-minutes: 85–90
 ---
 
 # Para llevarte

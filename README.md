@@ -24,6 +24,6 @@ pnpm build      # both sessions as static sites in dist/
 | `components/`   | Brand: `InesdiWordmark`. Content: `TopicRow`, `PretrainingCompression`, `AttentionArcs`, `ContextWindowZones`, `GriefSpiral` |
 | `styles/`       | Brand tokens and helper classes: `ine-card`, `ine-card--accent`, `ine-todo` |
 
-Content slides take a `minutes` frontmatter field (e.g. `minutes: 25–50`) that shows in the footer; section slides take `number` and `minutes`.
+Section slides take a `number` frontmatter field.
 
 The examples use **Peluda**, a fictional pet-food subscription company. Its back office lives in [inesdi-2026-peluda-admin](https://github.com/manuartero/inesdi-2026-peluda-admin).

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-defineProps<{ minutes?: string; number?: string }>()
+defineProps<{ number?: string }>()
 </script>
 
 <template>
@@ -7,7 +7,6 @@ defineProps<{ minutes?: string; number?: string }>()
     <div class="ine-section__body">
       <p v-if="number" class="ine-section__number">{{ number }}</p>
       <slot />
-      <p v-if="minutes" class="ine-section__minutes">{{ minutes }}</p>
     </div>
   </div>
 </template>
