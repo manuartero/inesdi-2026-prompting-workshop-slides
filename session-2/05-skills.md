@@ -52,18 +52,19 @@ pienso de perro adulto en España.
 
 ```text
 ---
-name: peluda-contexto
-description: Quién es Peluda, qué vende y
-  cómo funciona. Úsala en cualquier tarea
-  de Peluda antes de responder.
+name: peluda-review
+description: Redacta borradores de respuesta a
+  reseñas de clientes de Peluda con la voz de
+  la marca. Úsala cuando te pidan responder
+  a una reseña.
 ---
 
-Trabajas para Peluda, una empresa de comida
-para perros y gatos por suscripción…
+Eres quien redacta borradores de respuesta a
+reseñas de clientes de Peluda…
 
-- Tres planes: Básico, Completo y Cuidado.
-- España, México, Perú, Colombia y Argentina.
-- Si te falta un dato de Peluda, pregúntalo.
+# Voz
+# Antes de escribir
+# Reglas · Datos personales · Firma…
 ```
 
 </div>
@@ -84,19 +85,14 @@ La descripción es la parte que más se descuida y la que más importa: con ella
 
 ---
 
-# Demo: dos skills y una reseña
+# Demo: una skill y una reseña
 
 <div class="grid grid-cols-[1fr_1.2fr] gap-8 mt-2">
-<div class="flex flex-col gap-4">
-<div class="ine-tile">
-  <span class="ine-tile__icon"><span class="i-ph-buildings-fill" /></span>
-  <h3>peluda-contexto.md</h3>
-  <p>Quiénes somos: planes, países, proveedores. Sirve para cualquier tarea.</p>
-</div>
-<div class="ine-tile">
+<div>
+<div class="ine-tile ine-tile--accent">
   <span class="ine-tile__icon"><span class="i-ph-star-fill" /></span>
-  <h3>peluda-resenas.md</h3>
-  <p>El prompt que escribió el modelo en plan mode, tal cual. La guía de voz ya va dentro.</p>
+  <h3>peluda-review.md</h3>
+  <p>El prompt que escribió el modelo en plan mode, <b>tal cual</b>. La guía de voz ya va dentro.</p>
 </div>
 </div>
 <div>
@@ -119,43 +115,51 @@ Me cobraron con mi tarjeta terminación
 </div>
 
 <!--
-Es la reseña de Patricia, que ya probaron en plan mode con el prompt entero. Mismo resultado (o mejor), con una línea.
-Lo que hay que ver en la respuesta: RESPUESTA + NOTA PARA QUIEN REVISA; trato de tú cálido (México); no repite la tarjeta ni el teléfono; pide pasar a privado y ocultar la reseña.
+Es la reseña de Patricia, que ya probaron en plan mode con el prompt entero. Mismo resultado, con una línea.
+Lo que hay que ver en la respuesta: RESPUESTA + NOTA PARA QUIEN REVISA; trato de tú cálido (México); no repite la tarjeta ni el teléfono; pide pasar a privado; en la nota, alerta de datos personales.
 Montaje y prompts en demos/sesion-2/04-skill.md.
 -->
 
 ---
 
-# Tu turno: con las skills
+# Tu turno: tu primera skill
 
-<div class="grid grid-cols-[1.3fr_1fr] gap-8 mt-2">
-<div class="grid grid-cols-2 gap-4">
-<div class="ine-tile">
-  <span class="ine-tile__icon"><span class="i-ph-smiley-angry-fill" /></span>
-  <h3>Kike_88 · 1 estrella</h3>
-  <p class="ine-tile__example">«Pienso del súper metido en una bolsa bonita y a 45 pavos. Una estafa para pijos…»</p>
-</div>
-<div class="ine-tile">
-  <span class="ine-tile__icon"><span class="i-ph-heart-fill" /></span>
-  <h3>Pilar · 5 estrellas</h3>
-  <p class="ine-tile__example">«Nala nos dejó con 16 años. Comió Peluda desde el primer mes… Gracias a todo el equipo.»</p>
-</div>
+<div class="grid grid-cols-[1.2fr_1fr] gap-8 mt-2">
+<div>
+
+```text
+---
+name: peluda-context
+description: Quién es Peluda, qué vende y
+  cómo funciona. Úsala en cualquier tarea
+  de Peluda antes de responder.
+---
+
+## Qué vendemos      → el <contexto> de la sesión 1
+## Los planes        → CMS · Clientes
+## Dónde estamos     → CMS · Inicio
+## Lo que pasa ahora → el <contexto> de la sesión 1
+## Reglas            → ya vienen dos
+```
+
 </div>
 <div class="topic-list">
-  <TopicRow title="1" icon="i-ph-download-simple-fill">descarga las dos skills</TopicRow>
-  <TopicRow title="2" icon="i-ph-upload-simple-fill">súbelas, o pégalas al principio del chat</TopicRow>
-  <TopicRow title="3" icon="i-ph-chat-circle-text-fill">«Responde a esta reseña:» + la reseña</TopicRow>
-  <TopicRow title="4" icon="i-ph-paper-plane-tilt-fill">pega en el chat de la clase la que publicarías</TopicRow>
+  <TopicRow title="1" icon="i-ph-download-simple-fill">descarga la plantilla: cada hueco lleva su pista</TopicRow>
+  <TopicRow title="2" icon="i-ph-pencil-simple-fill">rellena los huecos: cinco líneas, ninguna difícil</TopicRow>
+  <TopicRow title="3" icon="i-ph-upload-simple-fill">súbela junto a peluda-review, o pega las dos al principio del chat</TopicRow>
+  <TopicRow title="4" icon="i-ph-chat-circle-text-fill">«Responde a esta reseña:» + la de Kike o la de Pilar</TopicRow>
 </div>
 </div>
 
-<div class="flex justify-center gap-8 mt-6 text-sm font-semibold">
-  <a href="https://inesdi-2026-prompting-workshop-slid.vercel.app/session-2/skills/peluda-contexto.md" class="inline-flex items-center gap-2 !border-none"><ph-file-text-fill class="text-xl" /> peluda-contexto.md</a>
-  <a href="https://inesdi-2026-prompting-workshop-slid.vercel.app/session-2/skills/peluda-resenas.md" class="inline-flex items-center gap-2 !border-none"><ph-file-text-fill class="text-xl" /> peluda-resenas.md</a>
+<div class="flex justify-center gap-8 mt-4 text-sm font-semibold">
+  <a href="https://inesdi-2026-prompting-workshop-slid.vercel.app/session-2/skills/peluda-context.template.md" class="inline-flex items-center gap-2 !border-none"><ph-file-text-fill class="text-xl" /> peluda-context.template.md</a>
+  <a href="https://inesdi-2026-prompting-workshop-slid.vercel.app/session-2/skills/peluda-review.md" class="inline-flex items-center gap-2 !border-none"><ph-file-text-fill class="text-xl" /> peluda-review.md</a>
 </div>
 
 <!--
-Kike (troll): una sola respuesta, breve y educada, sin entrar al trapo. Fallo típico: un argumentario a la defensiva (ingredientes, precio por día…).
-Pilar: cinco estrellas, pero es un duelo. Respetuosa, sin emojis, sin vender nada y confirmando que no habrá más envíos ni cobros (va con el ticket 0024).
-Las reseñas, en el CMS: Reseñas → «Copiar para el prompt».
+La plantilla ya trae el frontmatter (name y description) y las reglas: solo hay que rellenar cinco huecos, y cada uno dice dónde está el dato.
+Solución en demos/sesion-2/skills/peluda-context.solution.md.
+Quien acabe antes: que le pida a Claude que mejore su skill con plan mode («No la cambies todavía: dime qué le falta»).
+Para probarla: Kike (troll; una sola respuesta, educada, sin entrar al trapo) o Pilar (duelo con 5 estrellas: sin emojis, sin vender nada, confirmando que no habrá más envíos ni cobros). Con peluda-context, la respuesta puede usar el plan y el nombre de la mascota.
+Pega en el chat de la clase la skill que has escrito y la respuesta.
 -->

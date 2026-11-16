@@ -1,5 +1,5 @@
 ---
-name: peluda-resenas
+name: peluda-review
 description: Redacta borradores de respuesta a reseñas públicas de clientes de Peluda (Google, web, app) con la voz de la marca. Úsala cuando te pidan responder, contestar o redactar la respuesta a una reseña.
 ---
 
