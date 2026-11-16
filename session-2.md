@@ -24,10 +24,10 @@ Máster de FP en Inteligencia Artificial Aplicada a la Empresa
 # Esta sesión
 
 - Repaso y vuestros casos
-- Técnicas avanzadas
-- Caso 2: contratos
-- Caso 3: reseñas
-- Del prompt al flujo
+- El abogado del diablo
+- Grill me
+- Primero el plan, después el prompt
+- Skills: prompts preparados y compartidos
 - Cierre: chuleta y recursos
 
 ---
@@ -35,19 +35,19 @@ src: ./session-2/01-recap.md
 ---
 
 ---
-src: ./session-2/02-advanced-techniques.md
+src: ./session-2/02-devils-advocate.md
 ---
 
 ---
-src: ./session-2/03-contracts.md
+src: ./session-2/03-grill-me.md
 ---
 
 ---
-src: ./session-2/04-reviews.md
+src: ./session-2/04-plan-and-meta-prompt.md
 ---
 
 ---
-src: ./session-2/05-from-prompt-to-workflow.md
+src: ./session-2/05-skills.md
 ---
 
 ---

@@ -7,6 +7,22 @@ number: '06'
 
 ---
 
+# La responsabilidad no se delega
+
+<p class="text-xl mt-2">La IA es una herramienta. <b>La responsabilidad sigue siendo tuya.</b></p>
+
+<div class="topic-list mt-4">
+  <TopicRow title="Revísalo todo">si llega a un cliente, a un contrato o a dirección, ha pasado antes por tus ojos</TopicRow>
+  <TopicRow title="Entiende lo que entregas">si no sabes explicarlo, no lo entregues: pídele que te lo explique</TopicRow>
+  <TopicRow title="Itera">la primera respuesta rara vez es la mejor</TopicRow>
+  <TopicRow title="Dale contexto">no sabe nada de tu empresa hasta que se lo cuentas</TopicRow>
+  <TopicRow title="Comparte lo que funciona">un prompt que acierta, pásaselo a tu equipo</TopicRow>
+</div>
+
+<p class="text-center italic mt-4">«Copiar y pegar sin revisar no es usar bien la IA: <b>es una negligencia</b>.»</p>
+
+---
+
 # Para llevarte
 
 <div class="ine-cols">

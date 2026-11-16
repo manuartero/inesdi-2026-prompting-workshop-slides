@@ -45,3 +45,16 @@ number: '01'
 </div>
 
 <div class="ine-todo mt-4">TODO: rellenar con 2 o 3 entregas de alumnos (llegan después del 24/11; pedir permiso para mostrarlas)</div>
+
+---
+
+# Hoy: cuatro ideas
+
+<div class="topic-list mt-2">
+  <TopicRow title="El abogado del diablo" icon="i-ph-scales-fill">que te lleve la contraria</TopicRow>
+  <TopicRow title="Grill me" icon="i-ph-chats-circle-fill">que te pregunte antes de hacer nada</TopicRow>
+  <TopicRow title="Primero el plan" icon="i-ph-list-checks-fill">que te proponga cómo lo haría y que te escriba el prompt</TopicRow>
+  <TopicRow title="Skills" icon="i-ph-package-fill">que no tengas que escribirlo cada vez</TopicRow>
+</div>
+
+<p class="mt-6">Cada una con un ejemplo de Peluda y un ejercicio.</p>
