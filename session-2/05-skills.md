@@ -126,6 +126,8 @@ La descripción es la parte que más se descuida y la que más importa: con ella
 </div>
 </div>
 
+<p class="text-center mt-1">El prompt largo ya no se escribe. <b>Se escribe la tarea.</b></p>
+
 <style>
 .ine-hl {
   position: absolute;
@@ -138,44 +140,7 @@ La descripción es la parte que más se descuida y la que más importa: con ella
 Claude → Personalizar → Skills → subir. Acepta el .md suelto («A .md file must contain the skill name and description formatted in YAML»), o un .zip con un SKILL.md dentro.
 Una vez subida: Share (a personas) o Publish to org (a toda la organización). Es el «se comparte» de la slide anterior, de verdad.
 Y se llama escribiendo /peluda-review al principio del mensaje, o Claude la usa solo cuando la descripción encaja con lo que pides.
--->
-
----
-
-# Demo: una skill y una reseña
-
-<div class="grid grid-cols-[1fr_1.2fr] gap-8 mt-2">
-<div>
-<div class="ine-tile ine-tile--accent">
-  <span class="ine-tile__icon"><span class="i-ph-star-fill" /></span>
-  <h3>peluda-review.md</h3>
-  <p>El prompt que escribió el modelo en plan mode, <b>tal cual</b>. La guía de voz ya va dentro.</p>
-</div>
-<p class="mt-4 text-sm font-semibold"><a href="https://inesdi-2026-prompting-workshop-slid.vercel.app/session-2/skills/peluda-review.zip" class="inline-flex items-center gap-2 !border-none"><ph-file-zip-fill class="text-xl" /> Descargar peluda-review.zip</a></p>
-</div>
-<div>
-
-## Y el chat, entero
-
-```text
-Responde a esta reseña:
-
-«Me llegaron las croquetas del gato.
-Me cobraron con mi tarjeta terminación
-4417. Llámenme al +52 222…»
-```
-
-<p class="mt-4">El prompt largo ya no se escribe. <b>Se escribe la tarea.</b></p>
-
-<div class="ine-todo mt-4">TODO: captura de la respuesta (s2-skill.png)</div>
-
-</div>
-</div>
-
-<!--
-Es la reseña de Patricia, que ya probaron en plan mode con el prompt entero. Mismo resultado, con una línea.
-Lo que hay que ver en la respuesta: RESPUESTA + NOTA PARA QUIEN REVISA; trato de tú cálido (México); no repite la tarjeta ni el teléfono; pide pasar a privado; en la nota, alerta de datos personales.
-Montaje y prompts en demos/sesion-2/04-skill.md.
+Si da tiempo, en directo: /peluda-review + la reseña de Patricia (CMS → Reseñas → «Copiar para el prompt»). Lo que hay que ver: RESPUESTA + NOTA PARA QUIEN REVISA; tú cálido (México); no repite la tarjeta ni el teléfono; pide pasar a privado; en la nota, alerta de datos personales.
 -->
 
 ---
@@ -211,7 +176,7 @@ description: Quién es Peluda, qué vende y
 
 <div class="flex justify-center gap-8 mt-4 text-sm font-semibold">
   <a href="https://inesdi-2026-prompting-workshop-slid.vercel.app/session-2/skills/peluda-context.template.md" class="inline-flex items-center gap-2 !border-none"><ph-file-text-fill class="text-xl" /> peluda-context.template.md</a>
-  <a href="https://inesdi-2026-prompting-workshop-slid.vercel.app/session-2/skills/peluda-review.zip" class="inline-flex items-center gap-2 !border-none"><ph-file-zip-fill class="text-xl" /> peluda-review.zip</a>
+  <a href="https://inesdi-2026-prompting-workshop-slid.vercel.app/session-2/skills/peluda-review.md" class="inline-flex items-center gap-2 !border-none"><ph-file-text-fill class="text-xl" /> peluda-review.md</a>
 </div>
 
 <!--
