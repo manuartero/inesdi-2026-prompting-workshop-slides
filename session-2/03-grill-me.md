@@ -78,24 +78,70 @@ lo que necesito.
 </div>
 <div>
 
-## Lo que debería preguntarte
+## Lo que preguntó B
 
 <div class="topic-list" v-click>
-  <TopicRow title="Cuánto" icon="i-ph-percent-fill">¿qué porcentaje o qué precios nuevos?</TopicRow>
-  <TopicRow title="Desde cuándo" icon="i-ph-calendar-fill">¿a partir de qué cobro?</TopicRow>
-  <TopicRow title="Por qué" icon="i-ph-question-fill">¿qué motivo damos, si damos alguno?</TopicRow>
-  <TopicRow title="A cambio" icon="i-ph-gift-fill">¿hay algo para quien se queda?</TopicRow>
-  <TopicRow title="El tono" icon="i-ph-chat-circle-text-fill">¿vos? ¿hay una guía de voz?</TopicRow>
+  <TopicRow title="1" icon="i-ph-buildings-fill">¿qué empresa eres y qué sube de precio?</TopicRow>
+  <TopicRow title="2" icon="i-ph-percent-fill">¿cuánto sube y desde qué fecha?</TopicRow>
+  <TopicRow title="3" icon="i-ph-question-fill">¿quieres explicar el motivo? ¿Cuál?</TopicRow>
+  <TopicRow title="4" icon="i-ph-gift-fill">¿ofreces algo: pausar, cambiar de plan, cancelar, un descuento?</TopicRow>
 </div>
 
 </div>
 </div>
 
 <!--
-A: se inventa el porcentaje y la fecha, o deja huecos tipo [X %]; muchas veces tutea en vez de vosear.
-B: pregunta. Contesta en directo con lo que te dé la gana (un 9 % desde el próximo cobro, sin nada a cambio) y que vean cómo cambia el correo.
-Según la guía de voz de Peluda: en Argentina, vos, y los precios siempre con fecha porque cambian cada trimestre. Si no pregunta por el tono, buena señal de que falta la guía: eso lo arreglan las skills, al final.
-Prompts en demos/sesion-2/02-grill-me.md.
+Sin contexto, a propósito: ni siquiera le decimos que somos Peluda. Pregunta: «¿Qué creéis que hará A?».
+Lo que contestamos a B: Peluda, comida para mascotas por suscripción; un 9 % desde el próximo cobro; suben los costes de producción; nada a cambio, pero se puede cambiar de plan o darse de baja gratis desde la app.
+Prompts y resultado en demos/sesion-2/02-grill-me.md.
+-->
+
+---
+
+# Una plantilla contra un correo
+
+<div class="grid grid-cols-2 gap-8">
+<div>
+
+## A · Directo
+
+<div class="relative inline-block mt-1">
+  <img src="/captures/s2-grill-me-a.png" style="height: 215px" class="border border-gray-300" alt="Correo A: una plantilla genérica con huecos, de usted" />
+  <span class="ine-hl" style="left: 5%; top: 20.6%; width: 86%; height: 6.4%" />
+  <span class="ine-hl" style="left: 5%; top: 29.6%; width: 86%; height: 3.6%" />
+</div>
+
+<p class="mt-2" style="font-size: 0.8rem; line-height: 1.4">Una plantilla de manual: <b>[X] %</b>, <b>[motivo]</b>, «Estimado/a», de usted. No sabe ni qué vendemos.</p>
+
+</div>
+<div>
+
+## B · + Grill me
+
+<div class="relative inline-block mt-1">
+  <img src="/captures/s2-grill-me-b.png" style="height: 215px" class="border border-gray-300" alt="Correo B: el correo de Peluda, con el 9 %, de vos y con las salidas" />
+  <span class="ine-hl" style="left: 5%; top: 24%; width: 88%; height: 6%" />
+  <span class="ine-hl" style="left: 5%; top: 49.4%; width: 88%; height: 3.2%" />
+</div>
+
+<p class="mt-2" style="font-size: 0.8rem; line-height: 1.4">El correo de Peluda: <b>9 % desde el próximo cobro</b>, de vos, y con salidas: cambiar de plan o darse de baja.</p>
+
+</div>
+</div>
+
+<style>
+.ine-hl {
+  position: absolute;
+  background: rgba(255, 192, 0, 0.3);
+  border-bottom: 2px solid var(--ine-yellow);
+}
+</style>
+
+<!--
+Resultado real (16/11).
+A no se inventa las cifras (bien: deja huecos), pero entrega una plantilla genérica de empresa cualquiera: «Estimado/a», de usted, «[productos/servicios]», «[motivo: aumento de costos, inflación…]». Hasta te dice que usó usted y que, si sois más cercanos, se puede pasar a vos.
+B hizo cuatro preguntas, y con cuatro respuestas el correo ya es de Peluda: el 9 %, el próximo cobro, el motivo, las salidas, la mascota. Vosea y usa «costos» sin que se lo pidiéramos.
+Lo que no preguntó: el trato. Lo adivinó bien, pero lo adivinó. Eso es lo que resuelve una skill con la guía de voz (bloque 5).
 -->
 
 ---
