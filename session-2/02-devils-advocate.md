@@ -35,8 +35,6 @@ Por qué pasa: los modelos se entrenan para ser útiles y agradables, y tienden 
 -->
 
 ---
-clicks: 1
----
 
 # Demo: ¿salimos de Rutas Levante?
 
@@ -76,12 +74,62 @@ Responde dos veces, citando las cláusulas:
 </div>
 </div>
 
-<p v-click class="text-sm mt-3"><b>Lo que encuentra el devil's advocate:</b> la 12.2 deja salir con 60 días… «sin perjuicio del Anexo II». El <b>II.6</b>: pagar el 35&nbsp;% de la facturación media por cada mes que falte hasta el 28/02/2027. <span class="ine-todo">TODO: capturas A y B</span></p>
 
 <!--
-A suele quedarse en la 12.2: «sí, con 60 días de preaviso por escrito». Es verdad, pero no es toda la verdad.
-La 12.2 termina con «sin perjuicio de lo previsto en el Anexo II». El II.6 obliga a pagar el 35 % de la facturación media mensual de los últimos 12 meses por cada mes que falte hasta el vencimiento (28/02/2027). Y el II.5 fija un mínimo de 7.000 envíos al mes, en cómputo trimestral.
-Prompts en demos/sesion-2/01-abogado-del-diablo.md.
+Lanza los dos en directo (o enseña las capturas de la slide siguiente). Antes de ver los resultados, pregunta: «¿Qué creéis que contestará A?».
+Prompts y resultado real en demos/sesion-2/01-abogado-del-diablo.md.
+-->
+
+---
+
+# Los dos encuentran la penalización
+
+<div class="grid grid-cols-2 gap-8">
+<div>
+
+## A · La pregunta
+
+<div class="relative inline-block mt-1">
+  <img src="/captures/s2-abogado-a.png" style="height: 215px" class="border border-gray-300" alt="Respuesta A: cuatro vías para salir, con la compensación del Anexo II.6" />
+  <span class="ine-hl" style="left: 10%; top: 54.6%; width: 80%; height: 11.8%" />
+</div>
+
+<p class="mt-2" style="font-size: 0.8rem; line-height: 1.4">Responde muy bien <b>a lo que le preguntas</b>: cómo salir, y que salir sin causa cuesta el Anexo II.6.</p>
+
+</div>
+<div>
+
+## B · + Devil's advocate
+
+<div class="relative inline-block mt-1">
+  <img src="/captures/s2-abogado-b.png" style="height: 215px" class="border border-gray-300" alt="Respuesta B: los riesgos de la decisión, de la transición al pico de Navidad" />
+  <span class="ine-hl" style="left: 10%; top: 46.6%; width: 81%; height: 5.4%" />
+  <span class="ine-hl" style="left: 10%; top: 66.3%; width: 81%; height: 5.4%" />
+</div>
+
+<p class="mt-2" style="font-size: 0.8rem; line-height: 1.4">Te dice <b>lo que no preguntaste</b>: si salís antes, no hay transición garantizada, y el cambio cae en plena Navidad.</p>
+
+</div>
+</div>
+
+<style>
+.ine-hl {
+  position: absolute;
+  background: rgba(255, 192, 0, 0.3);
+  border-bottom: 2px solid var(--ine-yellow);
+}
+</style>
+
+<!--
+Resultado real (16/11). Los dos encuentran el II.6: los modelos buenos ya no se pierden la cláusula escondida. A incluso estima la compensación (unos 18.000 €) y avisa de que el 95 % se mide sobre el total de envíos.
+Lo que solo saca B:
+- Salir antes del vencimiento = sin los 3 meses de transición de la 11.2.
+- Cambiar de transportista en diciembre, en pleno pico de campaña.
+- El trimestre del mínimo de volumen (II.5) no está definido: el último puede quedar corto.
+- La cola de costes al salir: envíos en tránsito, devoluciones al 50 % (II.7), la última factura.
+- Confidencialidad (10.1): no podéis enseñar sus tarifas al nuevo transportista.
+- Coste de oportunidad: el contrato termina en unos meses de todos modos.
+Mensaje: A analiza el contrato; B analiza la decisión.
 -->
 
 ---
