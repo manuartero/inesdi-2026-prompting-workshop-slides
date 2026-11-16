@@ -1,5 +1,6 @@
 ---
 layout: section
+kicker: "Repaso"
 number: '01'
 ---
 
@@ -51,9 +52,9 @@ number: '01'
 # Hoy: cuatro ideas
 
 <div class="topic-list mt-2">
-  <TopicRow title="El abogado del diablo" icon="i-ph-scales-fill">que te lleve la contraria</TopicRow>
+  <TopicRow title="Devil's advocate" icon="i-ph-scales-fill">el abogado del diablo: que te lleve la contraria</TopicRow>
   <TopicRow title="Grill me" icon="i-ph-chats-circle-fill">que te pregunte antes de hacer nada</TopicRow>
-  <TopicRow title="Primero el plan" icon="i-ph-list-checks-fill">que te proponga cómo lo haría y que te escriba el prompt</TopicRow>
+  <TopicRow title="Plan mode" icon="i-ph-list-checks-fill">primero el plan, después la implementación</TopicRow>
   <TopicRow title="Skills" icon="i-ph-package-fill">que no tengas que escribirlo cada vez</TopicRow>
 </div>
 

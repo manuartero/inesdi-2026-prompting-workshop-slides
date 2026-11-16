@@ -299,3 +299,35 @@
   border-left: 3px solid var(--ine-yellow);
   padding-left: 0.6rem;
 }
+
+/* Section kicker above the title of every slide in a section whose section slide sets `kicker`. */
+.ine-kicker {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin: -1.2rem 0 0.4rem;
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ine-muted);
+}
+.ine-kicker__number {
+  color: var(--ine-ink);
+  border-bottom: 2px solid var(--ine-yellow);
+}
+
+/* Tile variants for a «before / after» pair: the default case muted, the one we want highlighted. */
+.ine-tile--muted {
+  color: var(--ine-muted);
+}
+.ine-tile--muted .ine-tile__icon {
+  background: var(--ine-soft);
+  color: var(--ine-muted);
+}
+.ine-tile--muted h3 {
+  color: var(--ine-muted);
+}
+.ine-tile--accent {
+  border: 2px solid var(--ine-yellow);
+}

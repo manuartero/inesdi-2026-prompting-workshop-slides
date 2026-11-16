@@ -1,27 +1,28 @@
 ---
 layout: section
+kicker: "Devil's advocate"
 number: '02'
 ---
 
-# El abogado del diablo
+# Devil's advocate
 
-Que te lleve la contraria
+El abogado del diablo: que te lleve la contraria
 
 ---
 
 # Por defecto, te da la razón
 
 <div class="grid grid-cols-2 gap-6 mt-2">
-<div class="ine-tile">
+<div class="ine-tile ine-tile--muted">
   <span class="ine-tile__icon"><span class="i-ph-thumbs-up-fill" /></span>
-  <h3>Sin pedírselo</h3>
+  <h3>Te dice que sí</h3>
   <p>Le cuentas tu idea y te ayuda a llevarla a cabo. Si la pregunta ya trae la respuesta, te la confirma.</p>
   <p class="ine-tile__example">«¿Podemos salir del contrato con 60 días de preaviso?» → «Sí, según la 12.2…»</p>
 </div>
-<div class="ine-tile">
+<div class="ine-tile ine-tile--accent">
   <span class="ine-tile__icon"><span class="i-ph-scales-fill" /></span>
-  <h3>Pidiéndoselo</h3>
-  <p>Le das un segundo papel: el que busca todo lo que puede salir mal.</p>
+  <h3>Te lleva la contraria</h3>
+  <p>Si le das un segundo papel: el que busca todo lo que puede salir mal.</p>
   <p class="ine-tile__example">«Ahora haz de abogado del diablo: ¿qué nos puede costar salir?»</p>
 </div>
 </div>
@@ -56,7 +57,7 @@ viene?
 </div>
 <div>
 
-## B · + Abogado del diablo
+## B · + Devil's advocate
 
 ```text
 [adjunto: el contrato]
@@ -75,7 +76,7 @@ Responde dos veces, citando las cláusulas:
 </div>
 </div>
 
-<p v-click class="text-sm mt-3"><b>Lo que encuentra el abogado del diablo:</b> la 12.2 deja salir con 60 días… «sin perjuicio del Anexo II». El <b>II.6</b>: pagar el 35&nbsp;% de la facturación media por cada mes que falte hasta el 28/02/2027. <span class="ine-todo">TODO: capturas A y B</span></p>
+<p v-click class="text-sm mt-3"><b>Lo que encuentra el devil's advocate:</b> la 12.2 deja salir con 60 días… «sin perjuicio del Anexo II». El <b>II.6</b>: pagar el 35&nbsp;% de la facturación media por cada mes que falte hasta el 28/02/2027. <span class="ine-todo">TODO: capturas A y B</span></p>
 
 <!--
 A suele quedarse en la 12.2: «sí, con 60 días de preaviso por escrito». Es verdad, pero no es toda la verdad.
@@ -93,8 +94,8 @@ Prompts en demos/sesion-2/01-abogado-del-diablo.md.
 <div class="ine-tile">
   <span class="ine-tile__icon"><span class="i-ph-factory-fill" /></span>
   <h3>«Dejamos que venza y cambiamos de fabricante»</h3>
-  <p class="ine-tile__example">«El contrato con NutriCan vence el 31/12. No lo renovamos y en enero empezamos con otro fabricante. ¿Algún problema?»</p>
-  <p class="ine-tile__remedy"><b>Tu tarea:</b> que el abogado del diablo lo revise, citando las cláusulas.</p>
+  <p class="ine-tile__example">«El contrato con NutriCan vence a final del mes que viene. No lo renovamos y luego empezamos con otro fabricante. ¿Algún problema?»</p>
+  <p class="ine-tile__remedy"><b>Tu tarea:</b> que el devil's advocate lo revise, citando las cláusulas.</p>
 </div>
 
 </div>
@@ -108,7 +109,7 @@ Prompts en demos/sesion-2/01-abogado-del-diablo.md.
 
 <!--
 Solución:
-- 14.2: la 10.1 dice que vence el 31/12/2026, pero la 14.2 (al final, en «Disposiciones generales») lo prorroga dos años si nadie avisa con 90 días: antes del 02/10/2026. El plazo ya pasó: sigue hasta el 31/12/2028 y con un 4 % extra de subida. «No lo renovamos» ya no es posible.
+- 14.2: la 10.1 dice que vence a final del mes que viene (el 01/12, día de la sesión, pone 31/01/2027), pero la 14.2 (al final, en «Disposiciones generales») lo prorroga dos años si nadie avisa con 90 días. Ese plazo acabó hace un mes: sigue dos años más y con un 4 % extra de subida. «No lo renovamos» ya no es posible.
 - 5.4: 48 horas para avisar por escrito de un lote que pueda dañar a los animales. Enlaza con el perro que vomita de los tickets (0004, 0015, 0063, 0145): antes de cambiar de fabricante, hay que reclamar ese lote.
 Sin la fecha de hoy, el modelo no puede saber que el plazo de la 14.2 ya pasó: por eso el paso 3.
 -->

@@ -1,5 +1,6 @@
 ---
 layout: section
+kicker: "Cierre"
 number: '06'
 ---
 

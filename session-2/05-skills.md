@@ -1,5 +1,6 @@
 ---
 layout: section
+kicker: "Skills"
 number: '05'
 ---
 

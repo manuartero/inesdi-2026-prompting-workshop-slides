@@ -24,10 +24,10 @@ Máster de FP en Inteligencia Artificial Aplicada a la Empresa
 # Esta sesión
 
 - Repaso y vuestros casos
-- El abogado del diablo
+- Devil's advocate
 - Grill me
-- Primero el plan, después el prompt
-- Skills: prompts preparados y compartidos
+- Plan mode
+- Skills
 - Cierre: chuleta y recursos
 
 ---
@@ -43,7 +43,7 @@ src: ./session-2/03-grill-me.md
 ---
 
 ---
-src: ./session-2/04-plan-and-meta-prompt.md
+src: ./session-2/04-plan-mode.md
 ---
 
 ---
