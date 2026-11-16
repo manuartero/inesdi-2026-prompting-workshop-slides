@@ -28,7 +28,7 @@ Máster de FP en Inteligencia Artificial Aplicada a la Empresa
 - Caso 2: contratos
 - Caso 3: reseñas
 - Del prompt al flujo
-- Cierre: chuleta final y recursos
+- Cierre: chuleta y recursos
 
 ---
 src: ./session-2/01-recap.md
