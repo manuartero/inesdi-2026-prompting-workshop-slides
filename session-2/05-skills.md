@@ -85,6 +85,63 @@ La descripción es la parte que más se descuida y la que más importa: con ella
 
 ---
 
+# Subir, compartir, usar
+
+<div class="grid grid-cols-3 gap-5 mt-2 items-start">
+<div>
+
+## 1 · Se sube el .md
+
+<div class="relative">
+  <img src="/captures/s2-skill-upload.png" class="w-full border border-gray-300" alt="Claude, Personalizar, Skills: subir peluda-review.md" />
+  <span class="ine-hl" style="left: 24%; top: 35.4%; width: 46%; height: 3.4%" />
+</div>
+
+<p class="mt-2" style="font-size: 0.75rem; line-height: 1.4">Basta con el <b>.md</b>: nombre y descripción arriba.</p>
+
+</div>
+<div>
+
+## 2 · Se comparte
+
+<div class="relative">
+  <img src="/captures/s2-skill-share.png" class="w-full border border-gray-300" alt="La skill subida, con los botones Share y Publish to org" />
+  <span class="ine-hl" style="left: 57%; top: 14%; width: 20%; height: 4%" />
+</div>
+
+<p class="mt-2" style="font-size: 0.75rem; line-height: 1.4"><b>Share</b> o <b>Publish to org</b>: todo el equipo, la misma skill.</p>
+
+</div>
+<div>
+
+## 3 · Se usa
+
+<div class="relative">
+  <img src="/captures/s2-skill-use.png" class="w-full border border-gray-300" alt="Un chat nuevo que empieza con /peluda-review" />
+  <span class="ine-hl" style="left: 6.5%; top: 35%; width: 16.5%; height: 8.5%" />
+</div>
+
+<p class="mt-2" style="font-size: 0.75rem; line-height: 1.4">Con <b>/peluda-review</b>, o sola, cuando la descripción encaja.</p>
+
+</div>
+</div>
+
+<style>
+.ine-hl {
+  position: absolute;
+  background: rgba(255, 192, 0, 0.3);
+  border-bottom: 2px solid var(--ine-yellow);
+}
+</style>
+
+<!--
+Claude → Personalizar → Skills → subir. Acepta el .md suelto («A .md file must contain the skill name and description formatted in YAML»), o un .zip con un SKILL.md dentro.
+Una vez subida: Share (a personas) o Publish to org (a toda la organización). Es el «se comparte» de la slide anterior, de verdad.
+Y se llama escribiendo /peluda-review al principio del mensaje, o Claude la usa solo cuando la descripción encaja con lo que pides.
+-->
+
+---
+
 # Demo: una skill y una reseña
 
 <div class="grid grid-cols-[1fr_1.2fr] gap-8 mt-2">
