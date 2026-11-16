@@ -24,7 +24,7 @@ pnpm build      # both sessions as static sites in dist/
 | `session-2/`    | Session 2 sections (`01-recap.md` … `06-wrap-up.md`)                                     |
 | `public/captures/` | Screenshots: the CMS (`cms-*.png`) and the demo results (`s1-*.png`)                  |
 | `layouts/`      | INESDI layouts: `cover`, `section`, `default`, `two-cols` (`::left::`/`::right::`), `statement`, `end` |
-| `components/`   | Brand: `InesdiWordmark`. Content: `TopicRow`, `PretrainingCompression`, `AttentionArcs`, `ContextWindowZones`, `GriefSpiral` |
+| `components/`   | Brand: `InesdiWordmark`. Content: `TopicRow`, `PretrainingCompression`, `AttentionArcs`, `ContextWindowZones` |
 | `styles/`       | Brand tokens and helper classes: `ine-card`, `ine-card--accent`, `ine-todo` |
 
 Section slides take a `number` frontmatter field. To add a section, create its file and add a `src:` block to the session file.

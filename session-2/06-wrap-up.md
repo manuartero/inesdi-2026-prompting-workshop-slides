@@ -7,43 +7,29 @@ number: '06'
 
 ---
 
-# ¿Me va a sustituir la IA?
-
-<div class="topic-list mt-2">
-  <TopicRow title="Cuanto más la usas, más valor tiene tu criterio">el juicio, la intuición del negocio y el contexto aparecen justo cuando la IA se ocupa de lo superficial</TopicRow>
-  <TopicRow title="Todos creen que el que está en riesgo es otro equipo">cuando todas las áreas dicen lo mismo a la vez, es un sesgo</TopicRow>
-</div>
-
-<div class="ine-card ine-card--accent mt-6">
-
-### El 88 % de quienes más rinden con IA dicen estar quemados
-
-La IA no reduce el trabajo, lo intensifica: más velocidad → más alcance → más horas. No te estás quedando atrás: la carga es real.
-
-<p class="text-xs mt-1">UC Berkeley · Upwork · HBR, 2026</p>
-
-</div>
-
-<!-- TODO: comprobar la fuente del 88 % antes de la sesión. -->
-
----
-
-# Es un proceso, no un momento
-
-<GriefSpiral class="mt-6" />
-
-<p class="text-center mt-6">No es lineal: es <b>una espiral</b>. Cada vuelta te acerca. Saber en qué fase estás lo acelera.</p>
-
-<p class="text-center text-xs">dev.to/manuartero · <i>Let's talk about grief</i></p>
-
----
-
 # Para llevarte
 
-- La **chuleta final**: plantilla, técnicas avanzadas y checklist.
-- Los **datos de Peluda** y el CMS, para practicar cuando quieras.
-- Recursos para seguir.
+<div class="ine-cols">
+<div class="ine-card ine-card--accent">
 
-<p class="mt-6">CMS de Peluda: <b><a href="https://inesdi-2026-peluda-admin.vercel.app/" class="inline-flex items-center gap-2 !border-none"><ph-link-bold /> inesdi-2026-peluda-admin.vercel.app</a></b></p>
+### La chuleta
 
-<div class="ine-todo mt-4">TODO: enlaces (chuleta, recursos)</div>
+La plantilla, los trucos y la checklist contra las alucinaciones, en una página.
+
+<p class="mt-2"><a href="https://inesdi-2026-prompting-workshop-slid.vercel.app/chuleta.pdf" class="inline-flex items-center gap-2 font-semibold !border-none"><ph-file-pdf-fill class="text-xl" /> Descargar la chuleta (PDF)</a></p>
+
+</div>
+<div class="ine-card">
+
+### Para seguir
+
+Las guías oficiales, gratis y al día:
+
+- <a href="https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/use-xml-tags">Anthropic · Prompting best practices</a>
+- <a href="https://developers.openai.com/api/docs/guides/prompt-engineering">OpenAI · Prompt engineering</a>
+- <a href="https://aistudio.google.com/docs/prompting-strategies">Google · Prompt design strategies</a>
+
+</div>
+</div>
+
+<p class="text-center mt-8">Los datos de Peluda, para practicar cuando quieras: <b><a href="https://inesdi-2026-peluda-admin.vercel.app/" class="inline-flex items-center gap-2 !border-none"><ph-link-bold /> inesdi-2026-peluda-admin.vercel.app</a></b></p>
