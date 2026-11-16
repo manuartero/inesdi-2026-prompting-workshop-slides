@@ -94,6 +94,7 @@ La descripción es la parte que más se descuida y la que más importa: con ella
   <h3>peluda-review.md</h3>
   <p>El prompt que escribió el modelo en plan mode, <b>tal cual</b>. La guía de voz ya va dentro.</p>
 </div>
+<p class="mt-4 text-sm font-semibold"><a href="https://inesdi-2026-prompting-workshop-slid.vercel.app/session-2/skills/peluda-review.zip" class="inline-flex items-center gap-2 !border-none"><ph-file-zip-fill class="text-xl" /> Descargar peluda-review.zip</a></p>
 </div>
 <div>
 
@@ -153,7 +154,7 @@ description: Quién es Peluda, qué vende y
 
 <div class="flex justify-center gap-8 mt-4 text-sm font-semibold">
   <a href="https://inesdi-2026-prompting-workshop-slid.vercel.app/session-2/skills/peluda-context.template.md" class="inline-flex items-center gap-2 !border-none"><ph-file-text-fill class="text-xl" /> peluda-context.template.md</a>
-  <a href="https://inesdi-2026-prompting-workshop-slid.vercel.app/session-2/skills/peluda-review.md" class="inline-flex items-center gap-2 !border-none"><ph-file-text-fill class="text-xl" /> peluda-review.md</a>
+  <a href="https://inesdi-2026-prompting-workshop-slid.vercel.app/session-2/skills/peluda-review.zip" class="inline-flex items-center gap-2 !border-none"><ph-file-zip-fill class="text-xl" /> peluda-review.zip</a>
 </div>
 
 <!--
