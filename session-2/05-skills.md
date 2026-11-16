@@ -96,7 +96,7 @@ La descripción es la parte que más se descuida y la que más importa: con ella
 <div class="ine-tile">
   <span class="ine-tile__icon"><span class="i-ph-star-fill" /></span>
   <h3>peluda-resenas.md</h3>
-  <p>El prompt que salió del plan mode + la guía de voz entera.</p>
+  <p>El prompt que escribió el modelo en plan mode, tal cual. La guía de voz ya va dentro.</p>
 </div>
 </div>
 <div>
@@ -120,7 +120,7 @@ Me cobraron con mi tarjeta terminación
 
 <!--
 Es la reseña de Patricia, que ya probaron en plan mode con el prompt entero. Mismo resultado (o mejor), con una línea.
-Lo que hay que ver en la respuesta: análisis → respuesta → avisos; trato de tú cálido (México); no repite la tarjeta ni el teléfono; pide pasar a privado y ocultar la reseña.
+Lo que hay que ver en la respuesta: RESPUESTA + NOTA PARA QUIEN REVISA; trato de tú cálido (México); no repite la tarjeta ni el teléfono; pide pasar a privado y ocultar la reseña.
 Montaje y prompts en demos/sesion-2/04-skill.md.
 -->
 
