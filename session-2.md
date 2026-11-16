@@ -11,7 +11,7 @@ fonts:
 transition: fade
 favicon: favicon.svg
 layout: cover
-session: Sesión 2 · Flujos de trabajo · martes 01/12/2026
+session: Sesión 2 · Prompts estructurados II · martes 01/12/2026
 teacher: Manuel Artero Anguita
 ---
 

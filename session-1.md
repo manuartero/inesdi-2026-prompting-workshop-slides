@@ -11,7 +11,7 @@ fonts:
 transition: fade
 favicon: favicon.svg
 layout: cover
-session: Sesión 1 · Prompts estructurados · martes 24/11/2026
+session: Sesión 1 · Prompts estructurados I · martes 24/11/2026
 teacher: Manuel Artero Anguita
 ---
 
@@ -30,7 +30,7 @@ Máster de FP en Inteligencia Artificial Aplicada a la Empresa
   <span class="inline-flex items-center justify-center w-10 h-10 rounded-full" style="background: var(--ine-yellow)"><ph-robot-fill class="text-xl" /></span><b>Ahora</b><span>agentes, skills y servidores MCP: la plataforma de tooling de IA del equipo</span>
   <span class="inline-flex items-center justify-center w-10 h-10 rounded-full" style="background: var(--ine-yellow)"><ph-stack-fill class="text-xl" /></span><b>Antes</b><span>full stack; líder de backend en Doctor24 y de equipo en TV Apps</span>
   <span class="inline-flex items-center justify-center w-10 h-10 rounded-full" style="background: var(--ine-yellow)"><ph-chalkboard-teacher-fill class="text-xl" /></span><b>En INESDI</b><span>profesor de Frontend Frameworks (React) → Prompt engineering estratégico</span>
-  <span class="inline-flex items-center justify-center w-10 h-10 rounded-full" style="background: var(--ine-yellow)"><ph-graduation-cap-fill class="text-xl" /></span><b>Formación</b><span>Informática, Universidad Complutense de Madrid</span>
+  <span class="inline-flex items-center justify-center w-10 h-10 rounded-full" style="background: var(--ine-yellow)"><ph-graduation-cap-fill class="text-xl" /></span><b>Formación</b><span>Ingeniería Informática por la Universidad Complutense de Madrid</span>
 </div>
 
 <div class="absolute inset-x-0 bottom-12 flex justify-center gap-10 text-sm items-center whitespace-nowrap" style="color: var(--ine-muted)">
