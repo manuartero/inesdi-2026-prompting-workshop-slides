@@ -24,7 +24,7 @@ Un ticket, tres prompts
 </div>
 <div class="topic-list">
   <TopicRow title="1" icon="i-ph-browser-fill">abre el CMS de Peluda</TopicRow>
-  <TopicRow title="2" icon="i-ph-tray-fill">Tickets → Hoy → «Me habéis cobrado dos veces»</TopicRow>
+  <TopicRow title="2" icon="i-ph-tray-fill">Tickets → Últimas 24 h → «Me habéis cobrado dos veces»</TopicRow>
   <TopicRow title="3" icon="i-ph-chat-circle-text-fill">prueba los tres prompts en Claude o ChatGPT</TopicRow>
   <TopicRow title="4" icon="i-ph-paper-plane-tilt-fill">pega en el chat de la clase la respuesta que más te guste</TopicRow>
 </div>
@@ -32,7 +32,7 @@ Un ticket, tres prompts
 
 <p class="text-center text-lg font-semibold mt-6"><a href="https://inesdi-2026-peluda-admin.vercel.app/" class="inline-flex items-center gap-2 !border-none"><ph-link-bold /> inesdi-2026-peluda-admin.vercel.app</a></p>
 
-<!-- La fecha del mensaje y el ID del ticket cambian con el día: el CMS mueve todo a hoy. Buscad el asunto, no el ID. -->
+<!-- El ID ya no lleva fecha: es TCK-0009 cualquier día. Las fechas sí son relativas a hoy («hace 10 horas»). -->
 
 ---
 clicks: 1

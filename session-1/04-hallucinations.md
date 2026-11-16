@@ -79,7 +79,7 @@ Por qué pasan y cómo reducirlas
 </style>
 
 <!--
-A: antes de señalarlo, pregunta a la clase: «¿Veis algo raro?». Casi todo es verdad (6.1, 6.2, 6.3, las clínicas de México, la fecha del 28/02/2027).
+A: antes de señalarlo, pregunta a la clase: «¿Veis algo raro?». Casi todo es verdad (6.1, 6.2, 6.3, las clínicas de México, la fecha de vencimiento, a final de febrero).
 El fallo: «la cláusula 10.2 exige que cualquier cambio sea expreso y por escrito». La 10.2 dice: «Las Partes podrán renovarlo por acuerdo expreso y por escrito».
 B (chat nuevo, misma pregunta + «Cita literalmente cada cláusula que mencionas.»): las cuatro citas (6.1, 6.2, 6.3, 4.1) son literales, comprobadas contra el contrato, y desaparece la 10.2.
 Mensaje: los modelos buenos ya no se inventan la cláusula entera; se inventan el detalle, dentro de una respuesta correcta en un 95 %. Pedir la cita literal lo ata al texto y lo hace comprobable.

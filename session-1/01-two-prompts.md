@@ -18,7 +18,7 @@ layout: two-cols
 ## Prompt de una línea
 
 ```text
-📎 peluda-tickets-hoy.csv
+📎 peluda-tickets-ultimas-24h.csv
 
 Clasifica estos tickets.
 ```
@@ -30,7 +30,7 @@ Clasifica estos tickets.
 ## Prompt estructurado
 
 ```text
-📎 peluda-tickets-hoy.csv
+📎 peluda-tickets-ultimas-24h.csv
 
 <rol>Responsable de atención al cliente</rol>
 <contexto>Suscripción cada 4 semanas, 3 planes.
@@ -45,7 +45,7 @@ Categorías: Envío, Facturación… Urgencia: Alta…</formato>
 
 <!--
 Prompt A (probado el 14/11 con Opus 5.5, 151 tickets): lo hace bien, pero con SU esquema. Avisa: «No tenías un esquema propio, así que he usado este». 4 prioridades (Urgente/Alta/Normal/Baja) y ~25 categorías inventadas (Retención, Nutrición, Datos RGPD…): mañana serán otras, no se pueden contar ni comparar. Y cae en la trampa del 0009: lo junta con el 0033 como «fallo en una tanda de cobros», cuando Lucía tiene dos suscripciones.
-Los dos con el mismo CSV: la bandeja de hoy exportada del CMS (Tickets → Hoy → Exportar CSV, 151 tickets). Que vean el formato inconsistente frente a la tabla. Prompts en demos/sesion-1/01-dos-prompts.md.
+Los dos con el mismo CSV: la bandeja de las últimas 24 h exportada del CMS (Tickets → Últimas 24 h → Exportar CSV, 201 tickets; las capturas son del 14/11, con 151). Que vean el formato inconsistente frente a la tabla. Prompts en demos/sesion-1/01-dos-prompts.md.
 No explicar nada todavía.
 -->
 
@@ -169,7 +169,7 @@ España, México, Colombia, Perú y Argentina. 17.564 suscriptores.
 <!--
 Tour de 2 minutos en el CMS en directo (no en la slide):
 1. Inicio: 451 tickets sin clasificar y 224 reseñas sin responder. «Este es el lunes de este equipo».
-2. Tickets → filtro Hoy: 151 tickets. Botón «Exportar CSV»: así sacaremos los datos para la IA.
+2. Tickets → filtro Últimas 24 h: 201 tickets. Botón «Exportar CSV»: así sacaremos los datos para la IA.
 3. Abrir un ticket (por ejemplo, el 0009 «Me habéis cobrado dos veces»): cliente, mascotas, pedidos. «Copiar para el prompt».
 4. Proveedores: NutriCan «vence pronto» (spoiler del caso 2).
 5. Reseñas: 224 sin responder (caso 3, sesión 2).
